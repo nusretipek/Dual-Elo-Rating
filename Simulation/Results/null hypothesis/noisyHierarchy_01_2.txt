@@ -1,0 +1,154 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Iterations
+-------------------
+iteration: 0   objective: 76.5553
+iteration: 1   objective: 76.4307
+iteration: 2   objective: 76.3896
+iteration: 3   objective: 76.3895
+iteration: 4   objective: 76.3894
+iteration: 5   objective: 76.3891
+iteration: 6   objective: 76.3884
+iteration: 7   objective: 76.3863
+iteration: 8   objective: 76.3812
+iteration: 9   objective: 76.3675
+iteration: 10   objective: 76.3316
+iteration: 11   objective: 76.2373
+iteration: 12   objective: 75.9883
+iteration: 13   objective: 75.3063
+iteration: 14   objective: 73.0745
+iteration: 15   objective: 70.1123
+iteration: 16   objective: 68.8815
+iteration: 17   objective: 64.8085
+iteration: 18   objective: 63.7669
+iteration: 19   objective: 63.3556
+iteration: 20   objective: 63.3188
+iteration: 21   objective: 63.315
+iteration: 22   objective: 63.3149
+iteration: 23   objective: 63.3147
+iteration: 24   objective: 63.3141
+iteration: 25   objective: 63.3126
+iteration: 26   objective: 63.3087
+iteration: 27   objective: 63.2983
+iteration: 28   objective: 63.2709
+iteration: 29   objective: 63.1923
+iteration: 30   objective: 60.8533
+iteration: 31   objective: 59.5169
+iteration: 32   objective: 59.2162
+iteration: 33   objective: 59.1798
+iteration: 34   objective: 59.1689
+iteration: 35   objective: 59.1688
+iteration: 36   objective: 59.1688
+iteration: 37   objective: 59.1687
+iteration: 38   objective: 59.1685
+iteration: 39   objective: 59.1679
+iteration: 40   objective: 59.1666
+iteration: 41   objective: 59.1636
+iteration: 42   objective: 59.1575
+iteration: 43   objective: 59.1445
+iteration: 44   objective: 59.1145
+iteration: 45   objective: 59.0908
+iteration: 46   objective: 59.0874
+iteration: 47   objective: 59.085
+iteration: 48   objective: 59.0848
+iteration: 49   objective: 59.0847
+iteration: 50   objective: 59.0847
+iteration: 51   objective: 59.0847
+iteration: 52   objective: 59.0847
+iteration: 53   objective: 59.0847
+iteration: 54   objective: 59.0847
+iteration: 55   objective: 59.0847
+iteration: 56   objective: 59.0846
+iteration: 57   objective: 59.0843
+iteration: 58   objective: 59.0837
+iteration: 59   objective: 59.0826
+iteration: 60   objective: 59.0816
+iteration: 61   objective: 59.0811
+iteration: 62   objective: 59.0811
+iteration: 63   objective: 59.0811
+iteration: 64   objective: 59.0811
+iteration: 65   objective: 59.0811
+iteration: 66   objective: 59.0811
+iteration: 67   objective: 59.0811
+iteration: 68   objective: 59.0811
+iteration: 69   objective: 59.0811
+iteration: 70   objective: 59.0811
+iteration: 71   objective: 59.081
+iteration: 72   objective: 59.081
+iteration: 73   objective: 59.0809
+iteration: 74   objective: 59.0809
+iteration: 75   objective: 59.0808
+iteration: 76   objective: 59.0808
+iteration: 77   objective: 59.0808
+iteration: 78   objective: 59.0808
+iteration: 79   objective: 59.0808
+iteration: 80   objective: 59.0808
+iteration: 81   objective: 59.0808
+iteration: 82   objective: 59.0808
+iteration: 83   objective: 59.0808
+iteration: 84   objective: 59.0808
+iteration: 85   objective: 59.0808
+iteration: 86   objective: 59.0808
+iteration: 87   objective: 59.0808
+iteration: 88   objective: 59.0808
+iteration: 89   objective: 59.0808
+iteration: 90   objective: 59.0808
+iteration: 91   objective: 59.0807
+iteration: 92   objective: 59.0807
+iteration: 93   objective: 59.0807
+iteration: 94   objective: 59.0807
+iteration: 95   objective: 59.0807
+
+Optimized Elo: Results 
+ ---------------
+Loss: -59.0807
+Accuracy: 0.984
+Optimal K₁: -41.3454
+Optimal Initial Elo Scores: {450.06, 187.203, -149.694, -444.922, 191.684, -98.4606, -135.848}
+Final Elo Scores: {450.06, 187.203, -149.694, -444.922, 191.684, -98.4606, -135.848}
+Final Ranking: {0, 4, 1, 5, 6, 2, 3}
+Time (s): 0.0369369
+
+********************************************************
+*** Optimized Elo (K₂ Parameter - Accuracy-oriented) ***
+********************************************************
+
+Optimizing K₂ Parameter
+ ---------------
+Trying k2: 1.25    (3)    - Loss: -59.0807  
+Trying k2: 1.5     (4)    - Loss: -59.0807  
+Trying k2: 1.75    (6)    - Loss: -59.0807  
+Trying k2: 2       (7)    - Loss: -59.0807  
+Trying k2: 2.25    (9)    - Loss: -59.0807  
+Trying k2: 2.5     (12)   - Loss: -59.0807  
+Trying k2: 2.75    (16)   - Loss: -59.0807  
+Trying k2: 3       (20)   - Loss: -59.0807  
+Trying k2: 3.25    (26)   - Loss: -59.0807  
+Trying k2: 3.5     (33)   - Loss: -59.0807  
+Trying k2: 3.75    (43)   - Loss: -59.0807  
+Stopping search due to no improvement for 10 trials. 
+
+****************************************************
+*** Optimized Elo (K₂ Parameter - Loss-oriented) ***
+****************************************************
+
+Optimizing K₂ Parameter
+ ---------------
+Trying k2: 1.25    (3)    - Loss: -59.0807  
+Trying k2: 1.5     (4)    - Loss: -59.0807  
+Trying k2: 1.75    (6)    - Loss: -59.0807  
+Trying k2: 2       (7)    - Loss: -59.0807  
+Trying k2: 2.25    (9)    - Loss: -59.0807  
+Trying k2: 2.5     (12)   - Loss: -59.0807  
+Trying k2: 2.75    (16)   - Loss: -59.0807  
+Trying k2: 3       (20)   - Loss: -59.0807  
+Trying k2: 3.25    (26)   - Loss: -59.0807  
+Trying k2: 3.5     (33)   - Loss: -59.0807  
+Trying k2: 3.75    (43)   - Loss: -59.0807  
+Stopping search due to no improvement for 10 trials. 
+
+Result: K2 optimization yielded empty lists indication 0 hierarchy changes.
+
+Total Time (s): 3.16464
