@@ -1,0 +1,43 @@
+# Dual-K Rating
+
+This folder contains the source code, headers, and pre-compiled binaries for the Dual-K Elo rating. The contents are organized as follows:
+
+## Folder Structure
+
+### 1. src
+
+The `src` folder contains the structured C++ source code for the Dual-K Elo rating. These files implement the core functionality of the rating.
+
+## 2. include
+
+The `include` folder contains the header files necessary for compiling the Dual-K Elo rating. 
+These headers define the interfaces and structures used throughout the source code.
+
+## Executables
+
+### 1. `DualKRating`
+
+The `DualKRating` file is the Linux binary compiled on Debian GNU/Linux 11. The following compilation flags were used:
+
+```bash
+g++ src/*.cpp -o DualKRating -ldlib -lpthread -Iinclude -std=c++17 -O2 -Wall
+```
+
+The `DualKRatingWindows.exe` file is the Windows executable compiled using MinGW-w64 with static linking on Debian GNU/Linux 11. The following compilation flags were used:
+
+```bash
+x86_64-w64-mingw32-g++-posix src/*.cpp -o DualKRatingWindows.exe -L[PATH]/dlib -ldlib -static-libgcc -static-libstdc++ -static -lwinpthread -I[PATH]/dlib -I[PATH]/include -std=c++17 -flto -O2 -Wall
+```
+
+## Notes
+
+1. **Windows Performance**: The Windows executable (`DualKRatingWindows.exe`) is not optimized due to cross-compilation and linkage limitations. As a result, it runs approximately 10x slower than the Linux binary. If you are using Windows, consider compiling the code natively for better performance. For native compilation, you will first need to compile the [dlib library](http://dlib.net/compile.html) on Windows.
+2. **Performance**: For the best performance, it is advised to compile the source code yourself. Even on Windows, you can achieve better performance by compiling the code using the Windows Subsystem for Linux (WSL). To do this, first, compile [dlib in Linux](http://dlib.net/compile.html) within the WSL environment.
+3. **Modifying Runtime Parameters**: To modify the runtime parameters of the Dual-K Elo rating, please refer to the header files in the `include` folder.
+4. **Usage Information**: To view the usage information for the Dual-K Elo rating, you can run the following command:
+
+    ```bash
+    ./DualKRating -h
+    ```
+
+    This will output the usage information in a standard format, providing details on how to run the program and adjust its parameters.
