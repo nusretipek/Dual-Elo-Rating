@@ -8,7 +8,7 @@ This folder contains the source code, headers, and pre-compiled binaries for the
 
 The `src` folder contains the structured C++ source code for the Dual-K Elo rating. These files implement the core functionality of the rating.
 
-## 2. include
+### 2. include
 
 The `include` folder contains the header files necessary for compiling the Dual-K Elo rating. 
 These headers define the interfaces and structures used throughout the source code.
