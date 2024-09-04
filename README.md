@@ -4,26 +4,23 @@
 
 ## Repository Structure
 
-This repository is organized into the following folders:
-
-### 1. `Dual-K Elo Rating`
+### 1. Dual-K Elo Rating
 
 This folder contains:
 
 - **Source Code**: The C++ implementation of the Dual-K Elo rating.
 - **Compiled Binaries**: Pre-compiled binaries for both Linux and Windows systems.
 
-If you wish to use the Dual-K Elo rating, you can either compile the source code yourself or use the provided binaries.
+> If you wish to use the Dual-K Elo rating, you can either compile the source code yourself or use the provided binaries.
 
-### 2. `DomArchive`
+### 2. DomArchive
 
 This folder includes:
 
 - **Publicly Available Datasets**: Sourced from the [DomArchive](https://github.com/DomArchive/DomArchive) repository.
 - **Dual-K Elo Rating Results**: Results of applying the Dual-K Elo rating system to these datasets.
 
-
-### 3. `Simulation`
+### 3. Simulation
 
 This folder provides:
 
@@ -34,8 +31,7 @@ This folder provides:
 ## Demo
 
 You can try out the Dual-K Elo system via our online demo: [Dual-K Elo Demo](https://dual-k-elo.streamlit.app).
-
-Please note that the demo does not come with any uptime or performance guarantee. For the best performance, we recommend compiling the source code provided in this repository.
+Please note that, the demo does not come with any uptime or performance guarantee. For the best performance, we recommend compiling the source code provided in this repository.
 
 ## Cite This Work
 
