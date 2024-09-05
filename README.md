@@ -33,6 +33,11 @@ This folder provides:
 You can try out the Dual-K Elo system via our online demo: [Dual-K Elo Demo](https://dual-k-elo.streamlit.app).
 Please note that, the demo does not come with any uptime or performance guarantee. For the best performance, we recommend compiling the source code provided in this repository.
 
+<video width="640" height="360" controls loop>
+  <source src="demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Cite This Work
 
 **[Citation Here]**
