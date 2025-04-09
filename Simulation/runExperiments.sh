@@ -8,7 +8,7 @@ for DIR in "${BASE_DIRS[@]}"; do
       if [ -f "$FILE" ]; then
         BASENAME=$(basename "$FILE")
         OUTPUT_FILE="${DIR}/${BASENAME%.*}.txt"
-        ./DualKRating -f "$FILE" -opt 2 -n 30 -t 10 -v 2 > "$OUTPUT_FILE"
+        ./DualEloRating -f "$FILE" -opt 2 -n 30 -t 10 -v 2 > "$OUTPUT_FILE"
 				if [[ $? -eq 0 ]]; then
 						echo "$BASENAME processed successfully."
 				else
