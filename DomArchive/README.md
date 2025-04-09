@@ -1,6 +1,6 @@
 # DomArchive
 
-This folder contains datasets and results used to evaluate the Dual-K Elo rating, sourced and derived from the [DomArchive](https://github.com/DomArchive/DomArchive).
+This folder contains datasets and results used to evaluate the Dual Elo rating, sourced and derived from the [DomArchive](https://github.com/DomArchive/DomArchive).
 
 ## Folder Structure
 
@@ -16,7 +16,7 @@ For more detailed information on these datasets, please refer to the [DomArchive
 
 ### 2. Results
 
-The `Results` folder contains the standard outputs (STDOUT) from the Dual-K Elo rating, saved as text files. These files are generated using:
+The `Results` folder contains the standard outputs (STDOUT) from the Dual Elo rating, saved as text files. These files are generated using:
 
 - **Optimization Level**: 2
 - **Verbosity**: 2
