@@ -1,6 +1,6 @@
 # Simulation
 
-This folder contains simulated datasets, results, and code used to evaluate the Dual-K Elo rating.
+This folder contains simulated datasets, results, and code used to evaluate the Dual Elo rating.
 
 ## Folder Structure
 
@@ -21,7 +21,7 @@ The naming convention for these CSV files is: `dataset_type_alpha_index.csv`, wh
 
 ### 2. Results
 
-The `Results` folder contains the standard outputs (STDOUT) from the Dual-K Elo rating, saved as text files. These files are generated using:
+The `Results` folder contains the standard outputs (STDOUT) from the Dual Elo rating, saved as text files. These files are generated using:
 
 - **Optimization Level**: 2
 - **Verbosity**: 2
