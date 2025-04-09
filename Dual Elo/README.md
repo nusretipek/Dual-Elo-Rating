@@ -1,4 +1,4 @@
-# Dual-K Rating
+# Dual Elo Rating
 
 This folder contains the source code, headers, and pre-compiled binaries for the Dual Elo rating. The contents are organized as follows:
 
