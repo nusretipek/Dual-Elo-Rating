@@ -30,7 +30,7 @@ This folder provides:
 
 ## Demo
 
-You can try out the Dual Elo system via our online demo: [Dual-K Elo Demo](https://dual-k-elo.streamlit.app).
+You can try out the Dual Elo system via our online demo: [Dual Elo Demo](https://dual-k-elo.streamlit.app).
 Please note that, the demo does not come with any uptime or performance guarantee. For the best performance, we recommend compiling the source code provided in this repository.
 
 ![Demo](demo.gif)
