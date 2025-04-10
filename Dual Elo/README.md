@@ -29,6 +29,8 @@ The `DualEloRatingWindows.exe` file is the Windows executable compiled using Min
 x86_64-w64-mingw32-g++-posix src/*.cpp -o DualEloRatingWindows.exe -L[PATH]/dlib -ldlib -static-libgcc -static-libstdc++ -static -lwinpthread -I[PATH]/dlib -I[PATH]/include -std=c++17 -flto -O2 -Wall
 ```
 
+For MacOS, there is no compiled code, please follow the Linux compilation, ensuring g++ is installed.
+
 ## Notes
 
 1. **Windows Performance**: The Windows executable (`DualEloRatingWindows.exe`) is not optimized due to cross-compilation and linkage limitations. As a result, it runs approximately 10x slower than the Linux binary. If you are using Windows, consider compiling the code natively for better performance. For native compilation, you will first need to compile the [dlib library](http://dlib.net/compile.html) on Windows.
