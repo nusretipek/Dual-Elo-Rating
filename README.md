@@ -1,6 +1,6 @@
 # Dual Elo Rating
 
-**[Abstract Here]**
+Elo rating and its variants are widely employed to characterize the social (dominance) hierarchies within animal groups. These ranking methods are considered the state-of-the-art for analyzing sequential dyadic agonistic interaction data. However, they have been criticized for adapting slowly to rare but abrupt and important changes in the dominance hierarchy. In this paper, we show that this delayed response can be overcome by making the update parameter of the Elo rating time-dependent. By distinguishing between two types of interactions, i.e. low-impact and high-impact interactions each with an associated update parameter, a simple parametrization of a time-dependent update parameter can be obtained. We refer to this innovation as Dual Elo. Building on Optimized Elo, we propose a computationally efficient maximum-likelihood-based algorithm to fit Dual Elo to an observed sequence of interactions. The result is an extension of Elo rating that can handle a mix of gradual and sudden changes in the hierarchy, leading to a model that is more responsive with more robust estimates of the temporal evolution of the Elo scores. An extensive evaluation of the Dual Elo rating on both simulated and publicly available datasets demonstrates its robustness, even when the observations of the outcomes of interactions are noisy.
 
 ## Repository Structure
 
