@@ -29,7 +29,7 @@ The `DualEloRatingWindows.exe` file is the Windows executable compiled using Min
 x86_64-w64-mingw32-g++-posix src/*.cpp -o DualEloRatingWindows.exe -L[PATH]/dlib -ldlib -static-libgcc -static-libstdc++ -static -lwinpthread -I[PATH]/dlib -I[PATH]/include -std=c++17 -flto -O2 -Wall
 ```
 
-For MacOS, there is no compiled code, please follow the Linux compilation, ensuring g++ is installed.
+**For MacOS, we do not provide executable. Please follow the Linux compilation instructions, ensuring g++ is installed.**
 
 ## Notes
 
