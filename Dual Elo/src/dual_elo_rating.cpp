@@ -70,19 +70,6 @@ int main(int argc, char *argv[]) {
                 std::cerr << "Argument for --optimization-level must be 0, 1, or 2" << std::endl;
                 return 1;
             }
-        } else if ((arg == "-k2" || arg == "--initial-k2") && i + 1 < argc) {
-            try {
-                initialK2 = std::stod(argv[++i]);
-                if (initialK2 >= 10) {
-                    throw std::out_of_range("Initial K₂ must be less than 10");
-                }
-            } catch (const std::invalid_argument& e) {
-                std::cerr << "Invalid argument for --initial-k2: " << argv[i] << std::endl;
-                return 1;
-            } catch (const std::out_of_range& e) {
-                std::cerr << "Initial K₂ must be less than 10" << std::endl;
-                return 1;
-            }
         } else if ((arg == "-t" || arg == "--top-n") && i + 1 < argc) {
             try {
                 topN = std::stoi(argv[++i]);
@@ -127,11 +114,10 @@ int main(int argc, char *argv[]) {
             }
         } else if (arg == "-h" || arg == "--help") {
             std::cout << "Usage: "
-                      << "./my_program -f <file-path> [--optimization-level <level>] [--initial-k2 <value>]"
+                      << "./my_program -f <file-path> [--optimization-level <level>]"
                       << " [--n-random <number>] [--verbose <level>]" << std::endl;
             std::cout << "  -f, --file <file-path>       Path to the file (string, mandatory)." << std::endl;
             std::cout << "  -opt, --optimization-level <level> Set the optimization level (integer: 0, 1, or 2)." << std::endl;
-            std::cout << "  -k2, --initial-k2 <value>      Set the initial K₂ parameter (double, less than 10)." << std::endl;
             std::cout << "  -n, --n-random <number>        Set the number of random permutations for T (positive integer)." << std::endl;
             std::cout << "  -t, --top-n <number>           Set the number of maximum elements in combinations" << std::endl;
             std::cout << "  -v, --verbose <level>          Set the verbosity level (integer: 0, 1, or 2)." << std::endl;
@@ -140,11 +126,10 @@ int main(int argc, char *argv[]) {
         } else {
             std::cerr << "Unknown argument: " << arg << std::endl;
             std::cerr << "Usage: "
-                      << "./my_program -f <file-path> [--optimization-level <level>] [--initial-k2 <value>]"
+                      << "./my_program -f <file-path> [--optimization-level <level>]"
                       << " [--n-random <number>] [--verbose <level>]" << std::endl;
             std::cout << "  -f, --file <file-path>       Path to the file (string, mandatory)." << std::endl;
             std::cout << "  -opt, --optimization-level <level> Set the optimization level (integer: 0, 1, or 2)." << std::endl;
-            std::cout << "  -k2, --initial-k2 <value>      Set the initial K₂ parameter (double, less than 10)." << std::endl;
             std::cout << "  -n, --n-random <number>        Set the number of random permutations for T (positive integer)." << std::endl;
             std::cout << "  -t, --top-n <number>           Set the number of maximum elements in combinations" << std::endl;
             std::cout << "  -v, --verbose <level>          Set the verbosity level (integer: 0, 1, or 2)." << std::endl;
@@ -175,7 +160,7 @@ int main(int argc, char *argv[]) {
     std::vector<double> eloValues = matrixToVector(subFirstElement(params));
     std::vector<double> kValues = {std::exp(params(0)), std::exp(initialK2)};
 
-    // Run Optimized Elo K₂ parameter
+    // Run Optimized Elo k(c) parameter
     std::vector<double> kValuesOptimized;
     std::vector<double> kValuesOptimizedAccuracy;
     std::vector<double> kValuesOptimizedLoss;
@@ -198,7 +183,7 @@ int main(int argc, char *argv[]) {
     // Run Optimize Full Model
     if (optimizationLevel == 2) {
         if (indicesOptimizedAccuracy.empty() && indicesOptimizedLoss.empty()) {
-            std::cout << "Result: K2 optimization yielded empty lists indication 0 hierarchy changes." << std::endl;
+            std::cout << "Result: k(c) optimization yielded empty lists indication 0 hierarchy changes." << std::endl;
         }
         else {
             printHeaders(3); 
@@ -218,7 +203,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-/*CHANGELOG: NEED optimize the results with and without gradual change, The k2 optimizer changed to take all indices through the code, find_max_single parameters adjusted.*/
+/*CHANGELOG: NEED optimize the results with and without gradual change, The k(c) optimizer changed to take all indices through the code, find_max_single parameters adjusted.*/
 
 
         /*kValues = {params(0), optimziedK2};

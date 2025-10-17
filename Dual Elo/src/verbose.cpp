@@ -59,12 +59,12 @@ void printHeaders(int idx) {
     }
     else if (idx == 1){
         std::cout << "********************************************************\n"
-                     "*** Optimized Elo (K₂ Parameter - Accuracy-oriented) ***\n"
+                     "*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***\n"
                      "********************************************************" << std::endl;
     }
     else if (idx == 2){
         std::cout << "****************************************************\n"
-                     "*** Optimized Elo (K₂ Parameter - Loss-oriented) ***\n"
+                     "*** Optimized Elo (k(c) Parameter - Loss-oriented) ***\n"
                      "****************************************************" << std::endl;
     }
     else{

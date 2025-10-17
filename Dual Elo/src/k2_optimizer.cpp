@@ -12,9 +12,11 @@ K2Optimizer::K2Optimizer(const std::vector<std::pair<int, int>>& data,
 
 void K2Optimizer::K2OptimizerStepVerbose(double parameter, std::tuple<double, double, std::vector<int>> combination) {
     if (verbose == 1 || verbose == 2) {
-        std::cout << std::left << std::setw(10) << "Trying k2: " 
-                  << std::setw(8) << parameter 
-                  << std::setw(6) << "(" + std::to_string(int(std::round(std::exp(parameter)))) + ")" 
+        int kcNatural = static_cast<int>(std::round(std::exp(parameter)));
+        std::string logInfo = "(log(k(c)) = " + std::to_string(parameter) + ")";
+        std::cout << std::left << std::setw(10) << "Trying k(c): " 
+                  << std::setw(8) << kcNatural 
+                  << std::setw(6) << logInfo 
                   << " - Loss: " 
                   << std::setw(10) << std::get<0>(combination) 
                   << std::endl;
@@ -22,8 +24,9 @@ void K2Optimizer::K2OptimizerStepVerbose(double parameter, std::tuple<double, do
 }
 
 void K2Optimizer::K2OptimizerResultVerbose() {
-    std::cout << "\nK₂ Parameter: Results\n ---------------" << std::endl;
-    std::cout << "Optimized K₂: " << bestInitialParameter << std::endl;
+    int kcNatural = static_cast<int>(std::round(std::exp(bestInitialParameter)));
+    std::cout << "\nk(c) Parameter: Results\n ---------------" << std::endl;
+    std::cout << "Optimized k(c): " << kcNatural << " (log(k(c)) = " << bestInitialParameter << ")" << std::endl;
     kValues[1] = std::exp(bestInitialParameter);
     CombinationalIndices indicesConstruct(data, eloValues, kValues, permuteN, topN, 0);
     std::vector<int> indicesStep = indicesConstruct.run();
@@ -37,7 +40,7 @@ std::tuple<std::vector<double>, std::vector<int>> K2Optimizer::run() {
     auto start_t = std::chrono::high_resolution_clock::now();
     
     if (verbose == 1 || verbose == 2) {
-        std::cout << "\nOptimizing K₂ Parameter\n ---------------" << std::endl;
+        std::cout << "\nOptimizing k(c) Parameter\n ---------------" << std::endl;
     }
 
     // Objective function

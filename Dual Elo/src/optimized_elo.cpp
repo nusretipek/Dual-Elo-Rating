@@ -146,7 +146,8 @@ std::tuple<double, dlib::matrix<double,0,1>, std::vector<double>, double, double
     std::cout << "\nOptimized Elo: Results \n ---------------" << std::endl;
     std::cout << "Loss: " << trainLoss << std::endl;
     std::cout << "Accuracy: " << trainAcc << std::endl;
-    std::cout << "Optimal K₁: " << initialParameters(0) << std::endl;
+    const double kgNatural = std::exp(initialParameters(0));
+    std::cout << "Optimal k(g): " << kgNatural << " (log(k(g)) = " << initialParameters(0) << ")" << std::endl;
     std::cout << "Optimal Initial Elo Scores: " << matrixToString(initialScores) << std::endl;
     std::cout << "Final Elo Scores: " << vectorToString(finalElo) << std::endl;
     std::cout << "Final Ranking: " << vectorToString(argsort(finalElo)) << std::endl;

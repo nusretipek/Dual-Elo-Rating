@@ -145,7 +145,7 @@ void CombinationalSpikes::printResults(std::unordered_map<int, int> importanceMa
 
     if (!subcall) {
         // Verbose the interactions from the best combination
-        std::cout << "\nBest Combinational K₁ and K₂ Elo Model\n --------------- " << std::endl;
+        std::cout << "\nBest Combinational k(g) and k(c) Elo Model\n --------------- " << std::endl;
         printBestCombination(sortedCombinationLoss, bestCombIndex);
         
         for (int idx : std::get<2>(sortedCombinationLoss[bestCombIndex])) {

@@ -65,9 +65,11 @@ void FullOptimizer::FullOptimizerResultVerbose(dlib::matrix<double,0,1> params, 
     dlib::matrix<double, 0, 1> initialScores = subFirstElement(subFirstElement(params));
     std::vector<double> finalEloScores = matrixToVector(scores);
     double k2Adjusted = params(1) > K2_UPPER_BOUND_EXP ? K2_UPPER_BOUND_EXP : params(1);
+    const double kgNatural = std::exp(params(0));
+    const double kcNatural = std::exp(k2Adjusted);
     std::cout << "\nOptimized Full Model Elo: Results\n ---------------" << std::endl;
-    std::cout << "Optimal K₁: " << params(0) << std::endl;
-    std::cout << "Optimal K₂: " << k2Adjusted << std::endl;
+    std::cout << "Optimal k(g): " << kgNatural << " (log(k(g)) = " << params(0) << ")" << std::endl;
+    std::cout << "Optimal k(c): " << kcNatural << " (log(k(c)) = " << k2Adjusted << ")" << std::endl;
     std::cout << "Optimal Initial Elo Scores: " << matrixToString(initialScores) << std::endl;
     std::cout << "Final Elo Scores: " << vectorToString(finalEloScores) << std::endl;
     std::cout << "Final Ranking: " << vectorToString(argsort(finalEloScores)) << std::endl;
