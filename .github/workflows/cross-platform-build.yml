@@ -1,0 +1,114 @@
+name: dual-elo-cross-platform-build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+          - os: macos-latest
+          - os: ubuntu-latest
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure CMake (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: cmake -S "Dual Elo" -B build/msvc -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build DualEloRating (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: cmake --build build/msvc --config Release --target DualEloRating
+
+      - name: Prepare artifact directory (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: New-Item -ItemType Directory -Path build\artifacts -Force | Out-Null
+
+      - name: Copy executable (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: Copy-Item -Path "build/msvc/Release/DualEloRating.exe" -Destination "build/artifacts/DualEloRating-windows.exe" -Force
+
+      - name: Upload platform artifact (Windows)
+        if: matrix.os == 'windows-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: DualEloRating-windows
+          path: build\artifacts\DualEloRating-windows.exe
+          if-no-files-found: error
+
+      - name: Configure CMake (Unix)
+        if: matrix.os != 'windows-latest'
+        run: cmake -S "Dual Elo" -B build/${{ matrix.os }} -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build DualEloRating (Unix)
+        if: matrix.os != 'windows-latest'
+        run: cmake --build build/${{ matrix.os }} --config Release --target DualEloRating
+
+      - name: Prepare artifact directory (Unix)
+        if: matrix.os != 'windows-latest'
+        run: mkdir -p build/artifacts
+
+      - name: Copy executable (Unix)
+        if: matrix.os == 'macos-latest'
+        run: cp build/macos-latest/DualEloRating build/artifacts/DualEloRating-macos
+
+      - name: Copy executable (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        run: cp build/ubuntu-latest/DualEloRating build/artifacts/DualEloRating-linux
+
+      - name: Upload platform artifact (macOS)
+        if: matrix.os == 'macos-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: DualEloRating-macos
+          path: build/artifacts/DualEloRating-macos
+          if-no-files-found: error
+
+      - name: Upload platform artifact (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: DualEloRating-linux
+          path: build/artifacts/DualEloRating-linux
+          if-no-files-found: error
+
+  bundle:
+    name: Bundle executables
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download platform artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: combined
+
+      - name: Prepare bundle directory
+        run: |
+          mkdir -p bundle
+          find combined -mindepth 2 -maxdepth 2 -type f -exec cp {} bundle/ \;
+
+      - name: Create zip archive
+        run: |
+          cd bundle
+          zip -r ../DualEloRating-binaries.zip .
+
+      - name: Upload bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DualEloRating-bundle
+          path: DualEloRating-binaries.zip
+          if-no-files-found: error
