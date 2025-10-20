@@ -4,11 +4,12 @@
 K2Optimizer::K2Optimizer(const std::vector<std::pair<int, int>>& data, 
                          const std::vector<double>& eloValues, 
                          const std::vector<double>& initialKValues, 
+                         const PlayerRegistry& registry,
                          bool sortAccuracyFirst,
                          int permuteN, 
                          int topN,
                          int verbose)
-    : data(data), eloValues(eloValues), kValues(initialKValues), sortAccuracyFirst(sortAccuracyFirst), permuteN(permuteN), topN(topN), verbose(verbose) {}
+    : data(data), eloValues(eloValues), kValues(initialKValues), sortAccuracyFirst(sortAccuracyFirst), permuteN(permuteN), topN(topN), verbose(verbose), registry(registry) {}
 
 void K2Optimizer::K2OptimizerStepVerbose(double parameter, std::tuple<double, double, std::vector<int>> combination) {
     if (verbose == 1 || verbose == 2) {
@@ -30,7 +31,7 @@ void K2Optimizer::K2OptimizerResultVerbose() {
     kValues[1] = std::exp(bestInitialParameter);
     CombinationalIndices indicesConstruct(data, eloValues, kValues, permuteN, topN, 0);
     std::vector<int> indicesStep = indicesConstruct.run();
-    CombinationalSpikes spikesConstructVerbose(data, eloValues, kValues, indicesStep, sortAccuracyFirst, verbose, false, false); //CHECK
+    CombinationalSpikes spikesConstructVerbose(data, eloValues, kValues, indicesStep, sortAccuracyFirst, verbose, false, false, registry); //CHECK
     std::tuple<double, double, std::vector<int>> combination = spikesConstructVerbose.run();
 }
 
@@ -48,7 +49,7 @@ std::tuple<std::vector<double>, std::vector<int>> K2Optimizer::run() {
             kValues[1] = std::exp(parameter);
             CombinationalIndices indicesConstruct(data, eloValues, kValues, permuteN, topN, 0);
             std::vector<int> indicesStep = indicesConstruct.run();
-            CombinationalSpikes spikesConstructK2Model(data, eloValues, kValues, indicesStep, sortAccuracyFirst, 0, true, false); //CHECK
+            CombinationalSpikes spikesConstructK2Model(data, eloValues, kValues, indicesStep, sortAccuracyFirst, 0, true, false, registry); //CHECK
             std::tuple<double, double, std::vector<int>> combination = spikesConstructK2Model.run();
             K2OptimizerStepVerbose(parameter, combination);
             return std::get<0>(combination);
@@ -91,7 +92,7 @@ std::tuple<std::vector<double>, std::vector<int>> K2Optimizer::run() {
     kValues[1] = std::exp(bestInitialParameter);
     CombinationalIndices indicesConstruct(data, eloValues, kValues, permuteN, topN, 0);
     std::vector<int> bestIndices = indicesConstruct.run();
-    CombinationalSpikes spikesConstruct(data, eloValues, kValues, bestIndices, sortAccuracyFirst, 0, true, false);
+    CombinationalSpikes spikesConstruct(data, eloValues, kValues, bestIndices, sortAccuracyFirst, 0, true, false, registry);
     std::tuple<double, double, std::vector<int>> combination = spikesConstruct.run();
 
     // Verbose runtime

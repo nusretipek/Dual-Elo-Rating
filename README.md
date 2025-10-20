@@ -28,6 +28,42 @@ This folder provides:
 - **Dual Elo Rating Results**: Results generated from the simulated data using the Dual-K Elo rating.
 - **Plotting Scripts**: Code to generate the plots that are used in the paper.
 
+## Building from Source
+
+The project now ships with a cross-platform CMake configuration that fetches and builds the required version of `dlib` automatically. CMake 3.16+ is recommended on all platforms.
+
+### Linux
+
+- Existing manual build: `g++ src/*.cpp -o DualEloRating -ldlib -lpthread -Iinclude -std=c++17 -O2 -Wall`
+- CMake build (downloads dlib on first configure):
+  ```bash
+  cmake -S "Dual Elo" -B build
+  cmake --build build --config Release
+  ```
+
+### macOS
+
+```bash
+cmake -S "Dual Elo" -B build
+cmake --build build --config Release
+```
+
+### Windows
+
+Using MinGW:
+```powershell
+cmake -S "Dual Elo" -B build -G "MinGW Makefiles"
+cmake --build build --config Release
+```
+
+Using Visual Studio (x64 Developer Command Prompt):
+```cmd
+cmake -S "Dual Elo" -B build
+cmake --build build --config Release
+```
+
+After the first configuration, dlib is stored in the CMake build cache, so subsequent builds reuse it without re-downloading.
+
 ## Demo
 
 You can try out the Dual Elo system via our online demo: [Dual Elo Demo](https://dual-elo-rating.streamlit.app).

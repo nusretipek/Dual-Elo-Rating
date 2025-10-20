@@ -73,3 +73,31 @@ void printHeaders(int idx) {
                      "**********************************" << std::endl;
     }
 }
+
+void printLabeledScores(const std::string& title,
+                        const std::vector<double>& scores,
+                        const std::vector<int>& players,
+                        const PlayerRegistry& registry) {
+    std::cout << title << std::endl;
+    if (scores.empty() || players.empty()) {
+        std::cout << "  (no players)" << std::endl;
+        return;
+    }
+
+    std::vector<std::pair<std::string, double>> labeledScores;
+    std::size_t limit = std::min(players.size(), scores.size());
+    labeledScores.reserve(limit);
+    for (std::size_t i = 0; i < limit; ++i) {
+        const std::string& label = registry.labelForIndex(players[i]);
+        labeledScores.emplace_back(label, scores[i]);
+    }
+
+    std::sort(labeledScores.begin(), labeledScores.end(),
+              [](const std::pair<std::string, double>& lhs, const std::pair<std::string, double>& rhs) {
+                  return lhs.first < rhs.first;
+              });
+
+    for (const auto& entry : labeledScores) {
+        std::cout << "  " << entry.first << ": " << entry.second << std::endl;
+    }
+}

@@ -6,7 +6,8 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <utility>
 
-std::vector<std::pair<int, int>> parseCSV(const std::string& filePath);
+std::vector<std::pair<std::string, std::string>> parseCSV(const std::string& filePath);
 
 #endif // CSV_PARSER_H

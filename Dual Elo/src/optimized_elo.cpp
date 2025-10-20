@@ -1,8 +1,9 @@
 #include "optimized_elo.h"
+#include "verbose.h"
 
 // Constructor definition
-OptimizedElo::OptimizedElo(const std::vector<std::pair<int, int>>& data, int verbose)
-    : data(data), verbose(verbose) {
+OptimizedElo::OptimizedElo(const std::vector<std::pair<int, int>>& data, const PlayerRegistry& registry, int verbose)
+    : data(data), players(), playerIndexMap(), playerCount(0), verbose(verbose), registry(registry) {
         // Initialize players and count
         std::set<int> playerSet;
         for (const auto& interaction : data) {
@@ -148,9 +149,17 @@ std::tuple<double, dlib::matrix<double,0,1>, std::vector<double>, double, double
     std::cout << "Accuracy: " << trainAcc << std::endl;
     const double kgNatural = std::exp(initialParameters(0));
     std::cout << "Optimal k(g): " << kgNatural << " (log(k(g)) = " << initialParameters(0) << ")" << std::endl;
-    std::cout << "Optimal Initial Elo Scores: " << matrixToString(initialScores) << std::endl;
-    std::cout << "Final Elo Scores: " << vectorToString(finalElo) << std::endl;
-    std::cout << "Final Ranking: " << vectorToString(argsort(finalElo)) << std::endl;
+    std::vector<double> initialScoreVector = matrixToVector(initialScores);
+    printLabeledScores("Optimal Initial Elo Scores:", initialScoreVector, players, registry);
+    printLabeledScores("Final Elo Scores:", finalElo, players, registry);
+    std::vector<int> rankingIndices = argsort(finalElo);
+    std::vector<std::string> rankingLabels;
+    rankingLabels.reserve(rankingIndices.size());
+    for (int idx : rankingIndices) {
+        int playerId = players[idx];
+        rankingLabels.push_back(registry.labelForIndex(playerId));
+    }
+    std::cout << "Final Ranking: " << vectorToString(rankingLabels) << std::endl;
     std::cout << "Time (s): " << elapsed.count() << "\n" <<std::endl;
 
     return std::make_tuple(elapsed.count(), initialParameters, finalElo, trainLoss, trainAcc);

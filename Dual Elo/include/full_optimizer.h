@@ -5,12 +5,14 @@
 #include <tuple>
 #include <vector>
 #include <limits>
+#include <unordered_map>
 #include <dlib/matrix.h>
 #include <dlib/optimization.h>
 #include "convert.h"
 #include "calculation.h"
 #include "combinational_indices.h"
 #include "combinational_spikes.h"
+#include "player_registry.h"
 
 
 // Define constants for optimization
@@ -28,6 +30,7 @@ public:
                   const std::vector<double>& eloValues, 
                   const std::vector<double>& initialKValues, 
                   std::vector<int> indices, 
+                  const PlayerRegistry& registry,
                   int verbose = 0);
 
     // Member functions
@@ -44,6 +47,7 @@ private:
     dlib::matrix<long> d;
     int playerCount;
     int verbose;
+    const PlayerRegistry& registry;
 
     // Parameters
     std::vector<double> finalElo;

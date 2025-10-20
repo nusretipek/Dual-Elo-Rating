@@ -35,8 +35,9 @@ FullOptimizer::FullOptimizer(const std::vector<std::pair<int, int>>& data,
                              const std::vector<double>& eloValues, 
                              const std::vector<double>& initialKValues, 
                              std::vector<int> indices, 
+                             const PlayerRegistry& registry,
                              int verbose)
-    : data(data), eloValues(eloValues), kValues(initialKValues), indices(indices), verbose(verbose) {
+    : data(data), players(), eloValues(eloValues), kValues(initialKValues), indices(indices), playerIndexMap(), d(), playerCount(0), verbose(verbose), registry(registry) {
             
         // Initialize players and count
         std::set<int> playerSet;
@@ -70,9 +71,17 @@ void FullOptimizer::FullOptimizerResultVerbose(dlib::matrix<double,0,1> params, 
     std::cout << "\nOptimized Full Model Elo: Results\n ---------------" << std::endl;
     std::cout << "Optimal k(g): " << kgNatural << " (log(k(g)) = " << params(0) << ")" << std::endl;
     std::cout << "Optimal k(c): " << kcNatural << " (log(k(c)) = " << k2Adjusted << ")" << std::endl;
-    std::cout << "Optimal Initial Elo Scores: " << matrixToString(initialScores) << std::endl;
-    std::cout << "Final Elo Scores: " << vectorToString(finalEloScores) << std::endl;
-    std::cout << "Final Ranking: " << vectorToString(argsort(finalEloScores)) << std::endl;
+    std::vector<double> initialScoreVector = matrixToVector(initialScores);
+    printLabeledScores("Optimal Initial Elo Scores:", initialScoreVector, players, registry);
+    printLabeledScores("Final Elo Scores:", finalEloScores, players, registry);
+    std::vector<int> rankingIndices = argsort(finalEloScores);
+    std::vector<std::string> rankingLabels;
+    rankingLabels.reserve(rankingIndices.size());
+    for (int idx : rankingIndices) {
+        int playerId = players[idx];
+        rankingLabels.push_back(registry.labelForIndex(playerId));
+    }
+    std::cout << "Final Ranking: " << vectorToString(rankingLabels) << std::endl;
 }
 
 
@@ -94,7 +103,7 @@ void FullOptimizer::run() {
         }
 
         // Fit Combinational Spikes
-        CombinationalSpikes spikesConstruct(data, currentElo, kValues, indices, true, 0, true, false); // CHECK
+        CombinationalSpikes spikesConstruct(data, currentElo, kValues, indices, true, 0, true, false, registry); // CHECK
         std::tuple<double, double, std::vector<int>> combination = spikesConstruct.run();
         
         // Return loss
@@ -136,7 +145,7 @@ void FullOptimizer::run() {
             finalElo[i - 2] = initialParameters(i);
     }
 
-    CombinationalSpikes spikesConstructSubcall(data, finalElo, kValues, indices, true, 0, true, true);
+    CombinationalSpikes spikesConstructSubcall(data, finalElo, kValues, indices, true, 0, true, true, registry);
     std::tuple<double, double, std::vector<int>> combination = spikesConstructSubcall.run();
     
     // Get scores (optimized Elo)
@@ -201,7 +210,7 @@ void FullOptimizer::run() {
     FullOptimizerResultVerbose(initialParameters, EloScores);
 
     // Best combination
-    CombinationalSpikes spikesConstruct(data, finalElo, kValues, indices, true, verbose, false, true);
+    CombinationalSpikes spikesConstruct(data, finalElo, kValues, indices, true, verbose, false, true, registry);
     combination = spikesConstruct.run();
 
     // Verbose runtime

@@ -1,12 +1,39 @@
 #include "csv_parser.h"
 
-std::vector<std::pair<int, int>> parseCSV(const std::string& filePath) {
-    std::vector<std::pair<int, int>> data;
+#include <algorithm>
+#include <cctype>
+
+namespace {
+
+std::string trim(const std::string& value) {
+    std::string::const_iterator begin = value.begin();
+    while (begin != value.end() && std::isspace(static_cast<unsigned char>(*begin))) {
+        ++begin;
+    }
+
+    std::string::const_iterator end = value.end();
+    while (end != begin && std::isspace(static_cast<unsigned char>(*(end - 1)))) {
+        --end;
+    }
+
+    return std::string(begin, end);
+}
+
+bool isBlank(const std::string& value) {
+    return std::all_of(value.begin(), value.end(), [](unsigned char ch) {
+        return std::isspace(ch);
+    });
+}
+
+} // namespace
+
+std::vector<std::pair<std::string, std::string>> parseCSV(const std::string& filePath) {
+    std::vector<std::pair<std::string, std::string>> data;
 
     std::ifstream file(filePath);
     if (!file.is_open()) {
         std::cerr << "Error opening file: " << filePath << std::endl;
-        return data;  
+        return data;
     }
 
     std::string headerLine;
@@ -15,28 +42,26 @@ std::vector<std::pair<int, int>> parseCSV(const std::string& filePath) {
 
     std::string line;
     while (std::getline(file, line)) {
-        std::istringstream lineStream(line);
-        std::string cell;
-        int values[2];
-        int i = 0;
-
-        while (std::getline(lineStream, cell, ',')) {
-            std::istringstream cellStream(cell);
-            if (!(cellStream >> values[i++])) {
-                std::cerr << "Error parsing line: " << line << std::endl;
-                data.clear();
-                return data;
-            }
+        if (line.empty() || isBlank(line)) {
+            continue;
         }
 
-        if (i == 2) {
-            data.emplace_back(values[0], values[1]);
-        } else {
+        std::istringstream lineStream(line);
+        std::string cell;
+        std::vector<std::string> cells;
+        while (std::getline(lineStream, cell, ',')) {
+            cells.push_back(trim(cell));
+        }
+
+        if (cells.size() != 2 || cells[0].empty() || cells[1].empty()) {
             std::cerr << "Error parsing line: " << line << std::endl;
             data.clear();
             return data;
         }
+
+        data.emplace_back(cells[0], cells[1]);
     }
+
     file.close();
 
     return data;

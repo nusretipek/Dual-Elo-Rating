@@ -7,6 +7,7 @@
 #include <dlib/optimization.h>
 #include "combinational_indices.h"
 #include "combinational_spikes.h"
+#include "player_registry.h"
 
 
 // Define constants for optimization
@@ -26,6 +27,7 @@ public:
     K2Optimizer(const std::vector<std::pair<int, int>>& data, 
                 const std::vector<double>& eloValues, 
                 const std::vector<double>& initialKValues, 
+                const PlayerRegistry& registry,
                 bool sortAccuracyFirst,
                 int permuteN = 100, 
                 int topN = 10,
@@ -45,6 +47,7 @@ private:
     int permuteN;
     int topN;
     int verbose;
+    const PlayerRegistry& registry;
 
     // Parameters
     double searchLowerBound = std::log(kValues[0]);

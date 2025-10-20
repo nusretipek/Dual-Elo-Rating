@@ -2,9 +2,11 @@
 #define COMBINATIONAL_SPIKES_H
 
 #include <vector>
+#include <unordered_map>
 #include <dlib/matrix.h>
 #include "verbose.h"
 #include "calculation.h"
+#include "player_registry.h"
 
 // Define constants for optimization
 const double THRESHOLD_ACC_SUBCALL_1 = 1.0;
@@ -43,9 +45,10 @@ public:
                         const std::vector<double>& kValues, 
                         std::vector<int> indices, 
                         bool sortAccuracyFirst,
-                        int verbose = 0, 
-                        bool subcall = false, 
-                        bool fullModel = false);
+                        int verbose, 
+                        bool subcall, 
+                        bool fullModel,
+                        const PlayerRegistry& registry);
 
     // Member functions
     void getCombinations();
@@ -75,6 +78,7 @@ private:
     bool subcall;
     bool fullModel;
     // Internal states
+    const PlayerRegistry& registry;
 
     dlib::matrix<double, 0, 1> eloScores;
 };

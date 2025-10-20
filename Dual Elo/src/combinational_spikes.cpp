@@ -7,8 +7,9 @@ CombinationalSpikes::CombinationalSpikes(const std::vector<std::pair<int, int>>&
                                          bool sortAccuracyFirst,
                                          int verbose, 
                                          bool subcall, 
-                                         bool fullModel)
-    : data(data), eloValues(eloValues), kValues(kValues), indices(indices), sortAccuracyFirst(sortAccuracyFirst), verbose(verbose), subcall(subcall), fullModel(fullModel) {
+                                         bool fullModel,
+                                         const PlayerRegistry& registry)
+    : data(data), eloValues(eloValues), kValues(kValues), indices(indices), sortAccuracyFirst(sortAccuracyFirst), verbose(verbose), subcall(subcall), fullModel(fullModel), registry(registry) {
             
         // Initialize players and playerCount
         std::set<int> playersSet;
@@ -150,10 +151,14 @@ void CombinationalSpikes::printResults(std::unordered_map<int, int> importanceMa
         
         for (int idx : std::get<2>(sortedCombinationLoss[bestCombIndex])) {
             if (importanceMap[idx] == 1) {
-                std::cout << "          " << idx << ": (" << d(idx, 0) << ", " << d(idx, 1) << ") --- Strong" << std::endl;
+                std::cout << "          " << idx << ": ("
+                          << registry.labelForIndex(d(idx, 0)) << ", "
+                          << registry.labelForIndex(d(idx, 1)) << ") --- Strong" << std::endl;
             }
             else {
-                std::cout << "          " << idx << ": (" << d(idx, 0) << ", " << d(idx, 1) << ") --- Subtle" << std::endl;
+                std::cout << "          " << idx << ": ("
+                          << registry.labelForIndex(d(idx, 0)) << ", "
+                          << registry.labelForIndex(d(idx, 1)) << ") --- Subtle" << std::endl;
             }
         }						
     }

@@ -24,6 +24,7 @@
 #include "combinational_spikes.h"
 #include "k2_optimizer.h"
 #include "full_optimizer.h"
+#include "player_registry.h"
 
 // Namespaces
 using namespace std;
@@ -151,11 +152,24 @@ int main(int argc, char *argv[]) {
     }
 
     // Parse CSV data into a vector of pairs
-    std::vector<std::pair<int, int>> data = parseCSV(filePath);
+    std::vector<std::pair<std::string, std::string>> rawData = parseCSV(filePath);
+    if (rawData.empty()) {
+        std::cerr << "CSV file contains no interactions or failed to parse." << std::endl;
+        return 1;
+    }
+
+    PlayerRegistry registry;
+    std::vector<std::pair<int, int>> data;
+    data.reserve(rawData.size());
+    for (const auto& interaction : rawData) {
+        int initiatorIndex = registry.registerPlayer(interaction.first);
+        int receiverIndex = registry.registerPlayer(interaction.second);
+        data.emplace_back(initiatorIndex, receiverIndex);
+    }
 
     // Run Optimized Elo (Default)
     printHeaders(0);
-    OptimizedElo elo(data, verbose);
+    OptimizedElo elo(data, registry, verbose);
     auto [time, params, finalElo, trainLoss, trainAcc] = elo.run();
     std::vector<double> eloValues = matrixToVector(subFirstElement(params));
     std::vector<double> kValues = {std::exp(params(0)), std::exp(initialK2)};
@@ -171,12 +185,12 @@ int main(int argc, char *argv[]) {
     if (optimizationLevel >= 1) {
         // Accuracy-oriented
         printHeaders(1); 
-        K2Optimizer eloK2Accuracy(data, eloValues, kValues, true, permuteN, topN, verbose);
+        K2Optimizer eloK2Accuracy(data, eloValues, kValues, registry, true, permuteN, topN, verbose);
         std::tie(kValuesOptimizedAccuracy, indicesOptimizedAccuracy) = eloK2Accuracy.run();
 
         // Loss-oriented
         printHeaders(2); 
-        K2Optimizer eloK2Loss(data, eloValues, kValues, false, permuteN, topN, verbose);
+        K2Optimizer eloK2Loss(data, eloValues, kValues, registry, false, permuteN, topN, verbose);
         std::tie(kValuesOptimizedLoss, indicesOptimizedLoss) = eloK2Loss.run();    
     }
 
@@ -189,7 +203,7 @@ int main(int argc, char *argv[]) {
             printHeaders(3); 
             kValuesOptimized = kValuesOptimizedAccuracy < kValuesOptimizedLoss ? kValuesOptimizedAccuracy : kValuesOptimizedLoss;
             indicesOptimized = mergedIndices(indicesOptimizedAccuracy, indicesOptimizedLoss);
-            FullOptimizer eloFull(data, eloValues, kValuesOptimized, indicesOptimized, verbose);
+            FullOptimizer eloFull(data, eloValues, kValuesOptimized, indicesOptimized, registry, verbose);
             eloFull.run();
         }
     }
