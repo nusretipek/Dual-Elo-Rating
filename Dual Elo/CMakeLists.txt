@@ -4,6 +4,11 @@ project(DualEloRating LANGUAGES CXX)
 
 include(FetchContent)
 
+if (MSVC)
+    # Use static MSVC runtime to align with statically linked Linux builds
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+endif()
+
 set(DLIB_GIT_TAG v19.24 CACHE STRING "dlib tag to use")
 
 FetchContent_Declare(
@@ -31,7 +36,7 @@ elseif (WIN32)
         target_link_options(DualEloRating PRIVATE -s -flto -static -static-libgcc -static-libstdc++)
         target_link_libraries(DualEloRating PRIVATE -lwinpthread)
     elseif (MSVC)
-        target_compile_options(DualEloRating PRIVATE /O2 /GL /fp:fast /arch:AVX2)
+        target_compile_options(DualEloRating PRIVATE /O2 /GL /fp:precise)
         target_link_options(DualEloRating PRIVATE /LTCG)
     endif()
 elseif (APPLE)
