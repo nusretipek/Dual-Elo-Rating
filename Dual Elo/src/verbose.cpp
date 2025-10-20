@@ -1,4 +1,42 @@
 #include "verbose.h"
+#include <cctype>
+#include <exception>
+
+namespace {
+bool isIntegerLabel(const std::string& label) {
+    if (label.empty()) {
+        return false;
+    }
+    std::size_t start = (label.front() == '-' || label.front() == '+') ? 1 : 0;
+    if (start >= label.size()) {
+        return false;
+    }
+    return std::all_of(label.begin() + start, label.end(), [](unsigned char ch) {
+        return std::isdigit(ch) != 0;
+    });
+}
+
+bool naturalLabelLess(const std::string& lhs, const std::string& rhs) {
+    const bool lhsIsInt = isIntegerLabel(lhs);
+    const bool rhsIsInt = isIntegerLabel(rhs);
+    if (lhsIsInt && rhsIsInt) {
+        try {
+            long long lhsValue = std::stoll(lhs);
+            long long rhsValue = std::stoll(rhs);
+            if (lhsValue != rhsValue) {
+                return lhsValue < rhsValue;
+            }
+            if (lhs.size() != rhs.size()) {
+                return lhs.size() < rhs.size();
+            }
+        }
+        catch (const std::exception&) {
+            // Fall through to lexicographical ordering when conversion fails.
+        }
+    }
+    return lhs < rhs;
+}
+} // namespace
 
 template <typename T>
 void printVector(const std::vector<T>& vec) {
@@ -94,7 +132,7 @@ void printLabeledScores(const std::string& title,
 
     std::sort(labeledScores.begin(), labeledScores.end(),
               [](const std::pair<std::string, double>& lhs, const std::pair<std::string, double>& rhs) {
-                  return lhs.first < rhs.first;
+                  return naturalLabelLess(lhs.first, rhs.first);
               });
 
     for (const auto& entry : labeledScores) {

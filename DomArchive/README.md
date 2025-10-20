@@ -25,3 +25,6 @@ Each TXT file also includes:
 
 - Execution time for each module.
 - Overall execution time at the end.
+
+> For any published numbers or reproducibility checks, run the Linux binary directly—or inside WSL/Docker when working on Windows or macOS.
+

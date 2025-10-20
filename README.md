@@ -8,10 +8,10 @@ Elo rating and its variants are widely employed to characterize the social (domi
 
 This folder contains:
 
-- **Source Code**: The C++ implementation of the Dual Elo Elo rating.
-- **Compiled Binaries**: Pre-compiled binaries for both Linux and Windows systems.
+- **Source Code**: The C++ implementation of the Dual Elo rating.
+- **Compiled Binaries**: Pre-compiled binaries for Linux, macOS, and Windows.
 
-> If you wish to use the Dual Elo Elo rating, you can either compile the source code yourself or use the provided binaries.
+> We ship executables for every platform, but only the Linux build is thoroughly tested. Native MSVC (Windows) and Clang (macOS) builds can yield small numerical deltas because their standard libraries use different floating-point reductions. For reproducible results, run the Linux executable directly (or via WSL/Docker on other platforms).
 
 ### 2. DomArchive
 
@@ -28,41 +28,7 @@ This folder provides:
 - **Dual Elo Rating Results**: Results generated from the simulated data using the Dual-K Elo rating.
 - **Plotting Scripts**: Code to generate the plots that are used in the paper.
 
-## Building from Source
-
-The project now ships with a cross-platform CMake configuration that fetches and builds the required version of `dlib` automatically. CMake 3.16+ is recommended on all platforms.
-
-### Linux
-
-- Existing manual build: `g++ src/*.cpp -o DualEloRating -ldlib -lpthread -Iinclude -std=c++17 -O2 -Wall`
-- CMake build (downloads dlib on first configure):
-  ```bash
-  cmake -S "Dual Elo" -B build
-  cmake --build build --config Release
-  ```
-
-### macOS
-
-```bash
-cmake -S "Dual Elo" -B build
-cmake --build build --config Release
-```
-
-### Windows
-
-Using MinGW:
-```powershell
-cmake -S "Dual Elo" -B build -G "MinGW Makefiles"
-cmake --build build --config Release
-```
-
-Using Visual Studio (x64 Developer Command Prompt):
-```cmd
-cmake -S "Dual Elo" -B build
-cmake --build build --config Release
-```
-
-After the first configuration, dlib is stored in the CMake build cache, so subsequent builds reuse it without re-downloading.
+For build instructions, CMake options, and compiler flags, refer to `Dual Elo/README.md`.
 
 ## Demo
 

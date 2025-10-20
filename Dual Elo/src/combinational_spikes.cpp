@@ -126,6 +126,7 @@ void CombinationalSpikes::getBestIndex() {
 }
 
 void CombinationalSpikes::printResults(std::unordered_map<int, int> importanceMap) {
+    static_cast<void>(importanceMap);
     if (verbose == 2) {
         std::cout << "\nCombinations Elo Spikes \n ---------------" << std::endl;
         printCombLoss(CombinationLoss);
@@ -150,16 +151,9 @@ void CombinationalSpikes::printResults(std::unordered_map<int, int> importanceMa
         printBestCombination(sortedCombinationLoss, bestCombIndex);
         
         for (int idx : std::get<2>(sortedCombinationLoss[bestCombIndex])) {
-            if (importanceMap[idx] == 1) {
-                std::cout << "          " << idx << ": ("
-                          << registry.labelForIndex(d(idx, 0)) << ", "
-                          << registry.labelForIndex(d(idx, 1)) << ") --- Strong" << std::endl;
-            }
-            else {
-                std::cout << "          " << idx << ": ("
-                          << registry.labelForIndex(d(idx, 0)) << ", "
-                          << registry.labelForIndex(d(idx, 1)) << ") --- Subtle" << std::endl;
-            }
+            std::cout << "          " << idx << ": ("
+                      << registry.labelForIndex(d(idx, 0)) << ", "
+                      << registry.labelForIndex(d(idx, 1)) << ")" << std::endl;
         }						
     }
 }

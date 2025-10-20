@@ -31,6 +31,8 @@ Each TXT file also includes:
 - Execution time for each module.
 - Overall execution time at the end.
 
+> The simulation results provided here were generated with the Linux `DualEloRating` binary to ensure consistency with the published benchmarks.
+
 ### 3. Code
 
 The `Code` folder contains library and scripts to:

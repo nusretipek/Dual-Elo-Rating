@@ -4,39 +4,58 @@ This folder contains the source code, headers, and pre-compiled binaries for the
 
 ## Folder Structure
 
-### 1. src
+### 1. src/
 
 The `src` folder contains the structured C++ source code for the Dual Elo rating. These files implement the core functionality of the rating.
 
-### 2. include
+### 2. include/
 
-The `include` folder contains the header files necessary for compiling the Dual Elo rating. 
+The `include` folder contains the header files necessary for compiling the Dual Elo rating.  
 These headers define the interfaces and structures used throughout the source code.
 
 ## Executables
 
 ### 1. `DualEloRating`
 
-The `DualEloRating` file is the Linux binary compiled on Debian GNU/Linux 11. The following compilation flags were used:
+- **Linux**: `DualEloRating` is built on Debian GNU/Linux 11 (g++ (Debian 10.2.1-6) 10.2.1 20210110) with:
+
+  ```bash
+  g++ src/*.cpp -o DualEloRating -ldlib -lpthread -Iinclude -std=c++17 -O2 -Wall
+  ```
+
+- **macOS**: `DualEloRating_macos` is compiled with Apple Clang 17.0.  
+- **Windows**: `DualEloRating.exe` is compiled with MSVC (Visual Studio 2022).
+
+## Building from Source
+
+We include a cross-platform CMake project that downloads the appropriate version of `dlib` on first configure (CMake ≥ 3.16 recommended).
+
+### Linux
 
 ```bash
-g++ src/*.cpp -o DualEloRating -ldlib -lpthread -Iinclude -std=c++17 -O2 -Wall
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release
 ```
 
-The `DualEloRatingWindows.exe` file is the Windows executable compiled using MinGW-w64 with static linking on Debian GNU/Linux 11. The following compilation flags were used:
+### macOS
 
 ```bash
-x86_64-w64-mingw32-g++-posix src/*.cpp -o DualEloRatingWindows.exe -L[PATH]/dlib -ldlib -static-libgcc -static-libstdc++ -static -lwinpthread -I[PATH]/dlib -I[PATH]/include -std=c++17 -flto -O2 -Wall
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release
 ```
 
-**For MacOS, we do not provide executable. Please follow the Linux compilation instructions, ensuring g++ is installed.**
+### Windows (MSVC)
+
+```powershell
+cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+cmake --build build --config Release
+```
 
 ## Notes
 
-1. **Windows Performance**: The Windows executable (`DualEloRatingWindows.exe`) is not optimized due to cross-compilation and linkage limitations. As a result, it runs approximately 10x slower than the Linux binary. If you are using Windows, consider compiling the code natively for better performance. For native compilation, you will first need to compile the [dlib library](http://dlib.net/compile.html) on Windows.
-2. **Performance**: For the best performance, it is advised to compile the source code yourself. Even on Windows, you can achieve better performance by compiling the code using the Windows Subsystem for Linux (WSL). To do this, first, compile [dlib in Linux](http://dlib.net/compile.html) within the WSL environment.
-3. **Modifying Runtime Parameters**: To modify the runtime parameters of the Dual Elo rating, please refer to the header files in the `include` folder.
-4. **Usage Information**: To view the usage information for the Dual Elo rating, you can run the following command:
+1. **Preferred Environment**: For best performance and reproducibility, compile and run the Linux version (natively or under WSL/Docker).
+2. **Modifying Runtime Parameters**: Configuration constants live in the headers under `include/`.
+3. **Usage Information**: To view the CLI usage, run:
 
     ```bash
     ./DualEloRating -h
