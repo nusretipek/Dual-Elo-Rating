@@ -11,6 +11,10 @@ if (MSVC)
 endif()
 
 set(DLIB_GIT_TAG v19.24 CACHE STRING "dlib tag to use")
+if(APPLE)
+    # macOS: newer Dlib for AppleClang 17+
+    set(DLIB_GIT_TAG v19.24.5 CACHE STRING "dlib tag to use" FORCE)
+endif()
 
 FetchContent_Declare(
     dlib
