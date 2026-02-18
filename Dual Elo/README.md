@@ -13,6 +13,20 @@ The `src` folder contains the structured C++ source code for the Dual Elo rating
 The `include` folder contains the header files necessary for compiling the Dual Elo rating. 
 These headers define the interfaces and structures used throughout the source code.
 
+#### Setting parameters
+```
+Usage: ./DualEloRating -f <file-path> [--optimization-level <level>] [--n-random <number>] [--verbose <level>]
+  -f, --file <file-path>       Path to the file (string, mandatory).
+  -opt, --optimization-level <level> Set the optimization level (integer: 0, 1, or 2).
+  -n, --n-random <number>        Set the number of random permutations for T (positive integer), 
+  -t, --top-n <number>           Set the number of maximum elements in combinations, 
+  -v, --verbose <level>          Set the verbosity level (integer: 0, 1, or 2).
+  -h, --help                 Print this help message.
+```
+The header file `include/combinational_spikes.h` contains software-level parameters that can be set prior to compilation. To set $\theta_{GSC}$, modify the constants `THRESHOLD_FULL_INDEX_0_LOSS_DIFFERENCE` and `THRESHOLD_FULL_INDEX_0_ACCURACY_DIFFERENCE` for loss and accuracy, respectively. 
+
+> Note that after any such adjustment in the header files, Dual Elo rating must be re-compiled!
+
 ## Executables
 
 ### 1. `DualEloRating`
