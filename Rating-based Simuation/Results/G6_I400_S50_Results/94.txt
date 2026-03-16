@@ -1,0 +1,93 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -168.054
+Accuracy: 0.8
+Optimal k(g): 56.1684 (log(k(g)) = 4.02835)
+Optimal Initial Elo Scores:
+  0: -0.648586
+  1: 45.2871
+  2: -69.7555
+  3: 83.3177
+  4: -2.36501
+  5: -55.835
+Final Elo Scores:
+  0: -361.084
+  1: 176.602
+  2: -66.4208
+  3: -137.663
+  4: 26.9732
+  5: 361.594
+Final Ranking: {5, 1, 4, 2, 3, 0}
+Time (s): 0.0160801
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 405 (log(k(c)) = 6.00306)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -159.738
+Accuracy: 0.81
+Indices: {50}
+          50: (5, 3)
+Time (s): 2.14463
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 507 (log(k(c)) = 6.22835)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -158.809
+Accuracy: 0.8125
+Indices: {50, 225}
+          50: (5, 3)
+          225: (2, 0)
+Time (s): 2.23209
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 29.3817 (log(k(g)) = 3.38037)
+Optimal k(c): 417.702 (log(k(c)) = 6.03477)
+Optimal Initial Elo Scores:
+  0: -39.7406
+  1: 72.7613
+  2: -58.0486
+  3: 143.934
+  4: -31.6123
+  5: -87.3235
+Final Elo Scores:
+  0: -313.814
+  1: 132.683
+  2: -37.9034
+  3: -115.957
+  4: -1.7853
+  5: 336.746
+Final Ranking: {5, 1, 4, 2, 3, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -157.465
+Accuracy: 0.8075
+Indices: {50}
+          50: (5, 3)
+Time (s): 0.0309636
+
+
+Total Time (s): 4.42447

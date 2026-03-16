@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -109.765
+Accuracy: 0.9
+Optimal k(g): 124.023 (log(k(g)) = 4.82047)
+Optimal Initial Elo Scores:
+  0: -19.8114
+  1: 48.763
+  2: -118.282
+  3: 106.647
+  4: -0.362988
+  5: -16.9772
+Final Elo Scores:
+  0: 583.441
+  1: 272.215
+  2: -52.6221
+  3: -32.2105
+  4: -318.497
+  5: -452.35
+Final Ranking: {0, 1, 3, 2, 4, 5}
+Time (s): 0.0123505
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 680 (log(k(c)) = 6.52166)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -92.2584
+Accuracy: 0.925
+Indices: {52, 264}
+          52: (0, 2)
+          264: (2, 5)
+Time (s): 1.53048
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 680 (log(k(c)) = 6.52166)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -92.2584
+Accuracy: 0.925
+Indices: {52, 264}
+          52: (0, 2)
+          264: (2, 5)
+Time (s): 1.52011
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 63.9382 (log(k(g)) = 4.15792)
+Optimal k(c): 673.189 (log(k(c)) = 6.51203)
+Optimal Initial Elo Scores:
+  0: -58.4432
+  1: 58.294
+  2: -77.2621
+  3: 54.0127
+  4: -28.0612
+  5: 51.4286
+Final Elo Scores:
+  0: 555.904
+  1: 250.228
+  2: -8.58007
+  3: -36.0001
+  4: -279.682
+  5: -481.902
+Final Ranking: {0, 1, 2, 3, 4, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -88.8137
+Accuracy: 0.92
+Indices: {52, 264}
+          52: (0, 2)
+          264: (2, 5)
+Time (s): 0.032759
+
+
+Total Time (s): 3.09618

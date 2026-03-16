@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -121.036
+Accuracy: 0.8975
+Optimal k(g): 85.5575 (log(k(g)) = 4.44919)
+Optimal Initial Elo Scores:
+  0: -133.926
+  1: 153.137
+  2: 30.5019
+  3: -60.8626
+  4: 47.5304
+  5: -36.3964
+Final Elo Scores:
+  0: 248.912
+  1: -186.017
+  2: -501.644
+  3: 376.529
+  4: 141.162
+  5: -78.9584
+Final Ranking: {3, 0, 4, 5, 1, 2}
+Time (s): 0.0124589
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 588 (log(k(c)) = 6.37674)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -107.857
+Accuracy: 0.92
+Indices: {53, 55, 161}
+          53: (3, 1)
+          55: (0, 2)
+          161: (0, 5)
+Time (s): 2.06044
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 699 (log(k(c)) = 6.54919)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -108.203
+Accuracy: 0.915
+Indices: {53, 161, 131}
+          53: (3, 1)
+          161: (0, 5)
+          131: (0, 2)
+Time (s): 2.41015
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 2.70236e-24 (log(k(g)) = -54.2679)
+Optimal k(c): 493.58 (log(k(c)) = 6.20168)
+Optimal Initial Elo Scores:
+  0: -120.413
+  1: 184.049
+  2: -37.5625
+  3: -77.8489
+  4: 107.455
+  5: -55.6965
+Final Elo Scores:
+  0: 223.138
+  1: -276.004
+  2: -381.113
+  3: 382.203
+  4: 107.455
+  5: -55.6965
+Final Ranking: {3, 0, 4, 5, 1, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -99.0621
+Accuracy: 0.92
+Indices: {53, 55}
+          53: (3, 1)
+          55: (0, 2)
+Time (s): 0.189878
+
+
+Total Time (s): 4.67352

@@ -1,0 +1,5 @@
+=== Spearman rank correlation vs true tiered hierarchy ===
+OptimizedEloRatings overall avg (T<= 800): 0.941
+  intervals: {'0-199': 0.954, '200-399': 0.918, '400-599': 0.915, '600+': 0.976}
+DualEloRatings      overall avg (T<= 800): 0.958
+  intervals: {'0-199': 0.954, '200-399': 0.943, '400-599': 0.953, '600+': 0.982}

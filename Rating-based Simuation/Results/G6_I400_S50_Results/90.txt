@@ -1,0 +1,92 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -185.456
+Accuracy: 0.7925
+Optimal k(g): 62.8716 (log(k(g)) = 4.1411)
+Optimal Initial Elo Scores:
+  0: 10.4273
+  1: -64.6648
+  2: 145.279
+  3: -10.5948
+  4: 44.3153
+  5: -124.791
+Final Elo Scores:
+  0: 54.0145
+  1: -78.1739
+  2: -338.643
+  3: 63.9249
+  4: 375.64
+  5: -76.792
+Final Ranking: {4, 3, 0, 5, 1, 2}
+Time (s): 0.0256089
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 513 (log(k(c)) = 6.2411)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -172.109
+Accuracy: 0.8175
+Indices: {188}
+          188: (4, 2)
+Time (s): 2.56731
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 513 (log(k(c)) = 6.2411)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -172.109
+Accuracy: 0.8175
+Indices: {188}
+          188: (4, 2)
+Time (s): 2.41905
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 9.3281e-92 (log(k(g)) = -209.605)
+Optimal k(c): 553.504 (log(k(c)) = 6.31627)
+Optimal Initial Elo Scores:
+  0: 42.0607
+  1: -99.1072
+  2: 170.993
+  3: 34.8875
+  4: -54.0686
+  5: -94.7937
+Final Elo Scores:
+  0: 42.0607
+  1: -99.1072
+  2: -329.764
+  3: 34.8875
+  4: 446.688
+  5: -94.7937
+Final Ranking: {4, 0, 3, 5, 1, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -162.837
+Accuracy: 0.8125
+Indices: {188}
+          188: (4, 2)
+Time (s): 0.0343111
+
+
+Total Time (s): 5.04708

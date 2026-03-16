@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -250.642
+Accuracy: 0.81
+Optimal k(g): 58.6194 (log(k(g)) = 4.07107)
+Optimal Initial Elo Scores:
+  0: -142.065
+  1: 160.13
+  2: -46.6625
+  3: 164.751
+  4: -61.9115
+  5: -74.234
+Final Elo Scores:
+  0: -226.639
+  1: -69.0853
+  2: -326.452
+  3: 181.529
+  4: 276.951
+  5: 163.705
+Final Ranking: {4, 3, 5, 1, 0, 2}
+Time (s): 0.0161843
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 458 (log(k(c)) = 6.12643)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -240.667
+Accuracy: 0.82
+Indices: {339}
+          339: (4, 2)
+Time (s): 4.37355
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 515 (log(k(c)) = 6.24332)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -235.165
+Accuracy: 0.82
+Indices: {339, 592, 500}
+          339: (4, 2)
+          592: (5, 4)
+          500: (3, 0)
+Time (s): 4.63025
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 30.6223 (log(k(g)) = 3.42173)
+Optimal k(c): 515.984 (log(k(c)) = 6.24608)
+Optimal Initial Elo Scores:
+  0: -139.535
+  1: 117.829
+  2: -30.4453
+  3: 188.322
+  4: -97.264
+  5: -38.8985
+Final Elo Scores:
+  0: -286.001
+  1: -67.9804
+  2: -339.596
+  3: 211.092
+  4: 334.237
+  5: 148.256
+Final Ranking: {4, 3, 5, 1, 0, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -231.729
+Accuracy: 0.825
+Indices: {339, 500}
+          339: (4, 2)
+          500: (3, 0)
+Time (s): 0.0882016
+
+
+Total Time (s): 9.10876

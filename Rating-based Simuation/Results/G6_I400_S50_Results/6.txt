@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -197.918
+Accuracy: 0.76
+Optimal k(g): 72.5318 (log(k(g)) = 4.28402)
+Optimal Initial Elo Scores:
+  0: -26.3354
+  1: 114.86
+  2: -24.3753
+  3: 44.5931
+  4: -122.265
+  5: 13.5294
+Final Elo Scores:
+  0: 243.136
+  1: -203.276
+  2: -261.316
+  3: 317.468
+  4: -124.505
+  5: 28.5006
+Final Ranking: {3, 0, 5, 4, 1, 2}
+Time (s): 0.0111539
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 492 (log(k(c)) = 6.19796)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -176.266
+Accuracy: 0.7925
+Indices: {141, 254}
+          141: (2, 3)
+          254: (3, 2)
+Time (s): 2.01992
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 490 (log(k(c)) = 6.19402)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -174.683
+Accuracy: 0.7925
+Indices: {141, 254, 70}
+          141: (2, 3)
+          254: (3, 2)
+          70: (3, 2)
+Time (s): 2.346
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 30.8196 (log(k(g)) = 3.42815)
+Optimal k(c): 478.545 (log(k(c)) = 6.17075)
+Optimal Initial Elo Scores:
+  0: -4.61038
+  1: 51.8778
+  2: 1.36723
+  3: 37.6603
+  4: -88.7676
+  5: 2.48343
+Final Elo Scores:
+  0: 209.19
+  1: -212.216
+  2: -232.602
+  3: 314.814
+  4: -84.876
+  5: 5.70123
+Final Ranking: {3, 0, 5, 4, 1, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -173.115
+Accuracy: 0.7975
+Indices: {141, 254}
+          141: (2, 3)
+          254: (3, 2)
+Time (s): 0.0766839
+
+
+Total Time (s): 4.45429

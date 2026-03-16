@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -241.346
+Accuracy: 0.828333
+Optimal k(g): 57.5332 (log(k(g)) = 4.05236)
+Optimal Initial Elo Scores:
+  0: -125.924
+  1: 19.2314
+  2: 25.7669
+  3: -27.8551
+  4: 66.6633
+  5: 42.1223
+Final Elo Scores:
+  0: -110.385
+  1: 147.352
+  2: -210.353
+  3: -393.145
+  4: 384.899
+  5: 181.636
+Final Ranking: {4, 5, 1, 0, 2, 3}
+Time (s): 0.0186774
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 687 (log(k(c)) = 6.53294)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -223.833
+Accuracy: 0.845
+Indices: {196, 279}
+          196: (4, 2)
+          279: (1, 3)
+Time (s): 4.10629
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 569 (log(k(c)) = 6.34389)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -222.527
+Accuracy: 0.845
+Indices: {196, 279}
+          196: (4, 2)
+          279: (1, 3)
+Time (s): 4.11458
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 16.2576 (log(k(g)) = 2.78856)
+Optimal k(c): 529.624 (log(k(c)) = 6.27217)
+Optimal Initial Elo Scores:
+  0: -109.225
+  1: 11.6108
+  2: 70.1866
+  3: -21.9161
+  4: 12.5268
+  5: 36.8423
+Final Elo Scores:
+  0: -116.019
+  1: 201.105
+  2: -256.818
+  3: -343.841
+  4: 400.47
+  5: 115.129
+Final Ranking: {4, 1, 5, 0, 2, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -213.993
+Accuracy: 0.828333
+Indices: {196, 279}
+          196: (4, 2)
+          279: (1, 3)
+Time (s): 0.0551003
+
+
+Total Time (s): 8.29523

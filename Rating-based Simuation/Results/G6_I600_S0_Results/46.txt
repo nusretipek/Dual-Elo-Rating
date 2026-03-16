@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -270.917
+Accuracy: 0.786667
+Optimal k(g): 63.863 (log(k(g)) = 4.15674)
+Optimal Initial Elo Scores:
+  0: 26.4126
+  1: 108.241
+  2: 156.834
+  3: -184.628
+  4: -48.761
+  5: -58.1018
+Final Elo Scores:
+  0: -364.816
+  1: 68.6882
+  2: 59.6427
+  3: 131.11
+  4: 230.118
+  5: -124.747
+Final Ranking: {4, 3, 1, 2, 5, 0}
+Time (s): 0.0400709
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 504 (log(k(c)) = 6.22279)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -242.707
+Accuracy: 0.811667
+Indices: {231, 368}
+          231: (5, 2)
+          368: (2, 0)
+Time (s): 4.33518
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 478 (log(k(c)) = 6.16976)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -241.437
+Accuracy: 0.813333
+Indices: {231, 368, 90}
+          231: (5, 2)
+          368: (2, 0)
+          90: (3, 5)
+Time (s): 4.08299
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 36.4691 (log(k(g)) = 3.59647)
+Optimal k(c): 459.243 (log(k(c)) = 6.12958)
+Optimal Initial Elo Scores:
+  0: 21.6325
+  1: 165.897
+  2: 161.034
+  3: -177.269
+  4: -67.6447
+  5: -103.674
+Final Elo Scores:
+  0: -372.41
+  1: 96.5399
+  2: 67.2794
+  3: 117.461
+  4: 184.451
+  5: -93.3451
+Final Ranking: {4, 3, 1, 2, 5, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -240.593
+Accuracy: 0.82
+Indices: {231, 368}
+          231: (5, 2)
+          368: (2, 0)
+Time (s): 0.165889
+
+
+Total Time (s): 8.62475

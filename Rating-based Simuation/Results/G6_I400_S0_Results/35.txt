@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -211.376
+Accuracy: 0.735
+Optimal k(g): 54.3312 (log(k(g)) = 3.9951)
+Optimal Initial Elo Scores:
+  0: -106.234
+  1: 8.47186
+  2: 161.31
+  3: -69.5686
+  4: -3.30728
+  5: 9.34239
+Final Elo Scores:
+  0: 201.041
+  1: 68.1597
+  2: 66.0562
+  3: 89.5289
+  4: -291.703
+  5: -133.069
+Final Ranking: {0, 3, 1, 2, 5, 4}
+Time (s): 0.0200763
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 453 (log(k(c)) = 6.1159)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -189.738
+Accuracy: 0.7575
+Indices: {148, 239}
+          148: (0, 2)
+          239: (2, 4)
+Time (s): 2.08495
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 453 (log(k(c)) = 6.1159)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -189.738
+Accuracy: 0.7575
+Indices: {148, 239}
+          148: (0, 2)
+          239: (2, 4)
+Time (s): 2.07677
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 22.5012 (log(k(g)) = 3.11357)
+Optimal k(c): 394.698 (log(k(c)) = 5.97812)
+Optimal Initial Elo Scores:
+  0: -106.94
+  1: 49.1258
+  2: 132.707
+  3: -45.0864
+  4: -9.3474
+  5: -20.459
+Final Elo Scores:
+  0: 166.388
+  1: 72.8526
+  2: 99.2288
+  3: 103.987
+  4: -323.144
+  5: -119.312
+Final Ranking: {0, 3, 2, 1, 5, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -184.272
+Accuracy: 0.7825
+Indices: {148, 239}
+          148: (0, 2)
+          239: (2, 4)
+Time (s): 0.0298016
+
+
+Total Time (s): 4.21209

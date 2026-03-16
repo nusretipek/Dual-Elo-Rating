@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -302.947
+Accuracy: 0.781667
+Optimal k(g): 69.8883 (log(k(g)) = 4.2469)
+Optimal Initial Elo Scores:
+  0: 7.1391
+  1: -127.045
+  2: 122.627
+  3: -39.1554
+  4: 57.0631
+  5: -20.6295
+Final Elo Scores:
+  0: -61.754
+  1: -130.727
+  2: 51.0171
+  3: 290.517
+  4: 161.226
+  5: -310.28
+Final Ranking: {3, 4, 2, 0, 1, 5}
+Time (s): 0.0265581
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 485 (log(k(c)) = 6.1843)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -276.63
+Accuracy: 0.82
+Indices: {135, 369}
+          135: (0, 4)
+          369: (4, 0)
+Time (s): 5.44159
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 485 (log(k(c)) = 6.1843)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -276.63
+Accuracy: 0.82
+Indices: {135, 369}
+          135: (0, 4)
+          369: (4, 0)
+Time (s): 4.54085
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 45.2621 (log(k(g)) = 3.81247)
+Optimal k(c): 453.965 (log(k(c)) = 6.11802)
+Optimal Initial Elo Scores:
+  0: -14.0358
+  1: -102.666
+  2: 99.6035
+  3: -32.9728
+  4: 64.8846
+  5: -14.8081
+Final Elo Scores:
+  0: -78.3605
+  1: -91.0926
+  2: 37.6367
+  3: 252.658
+  4: 141.284
+  5: -262.119
+Final Ranking: {3, 4, 2, 0, 1, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -273.48
+Accuracy: 0.818333
+Indices: {135, 369}
+          135: (0, 4)
+          369: (4, 0)
+Time (s): 0.0488028
+
+
+Total Time (s): 10.0585

@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -70.071
+Accuracy: 0.86
+Optimal k(g): 100.211 (log(k(g)) = 4.60728)
+Optimal Initial Elo Scores:
+  0: 129.052
+  1: 2.84498
+  2: -102.84
+  3: -22.98
+  4: 87.5885
+  5: -93.6655
+Final Elo Scores:
+  0: -101.481
+  1: 256.756
+  2: 374.513
+  3: -127.795
+  4: -423.579
+  5: 21.587
+Final Ranking: {2, 1, 5, 0, 3, 4}
+Time (s): 0.00972884
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 663 (log(k(c)) = 6.49728)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -58.6377
+Accuracy: 0.9
+Indices: {32, 167}
+          32: (2, 4)
+          167: (2, 3)
+Time (s): 0.57999
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 740 (log(k(c)) = 6.60728)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -58.1797
+Accuracy: 0.905
+Indices: {32, 25, 173, 140}
+          32: (2, 4)
+          25: (1, 5)
+          173: (2, 3)
+          140: (1, 0)
+Time (s): 0.579542
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 36.8439 (log(k(g)) = 3.60669)
+Optimal k(c): 551.144 (log(k(c)) = 6.312)
+Optimal Initial Elo Scores:
+  0: 129.052
+  1: 2.84608
+  2: -102.842
+  3: -22.9801
+  4: 87.5891
+  5: -93.6648
+Final Elo Scores:
+  0: -50.3074
+  1: 253.132
+  2: 319.794
+  3: -68.3996
+  4: -438.583
+  5: -15.6361
+Final Ranking: {2, 1, 5, 0, 3, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -57.9032
+Accuracy: 0.885
+Indices: {32}
+          32: (2, 4)
+Time (s): 0.309453
+
+
+Total Time (s): 1.47922

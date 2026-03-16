@@ -1,0 +1,100 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -93.8869
+Accuracy: 0.795
+Optimal k(g): 90.7947 (log(k(g)) = 4.5086)
+Optimal Initial Elo Scores:
+  0: 103.38
+  1: -159.438
+  2: -17.6045
+  3: -28.8432
+  4: 20.5112
+  5: 81.9913
+Final Elo Scores:
+  0: -324.66
+  1: 308.588
+  2: 5.21289
+  3: 168.887
+  4: 31.6315
+  5: -189.662
+Final Ranking: {1, 3, 4, 2, 5, 0}
+Time (s): 0.00548931
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 826 (log(k(c)) = 6.71634)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -73.9075
+Accuracy: 0.87
+Indices: {109, 58, 136, 7}
+          109: (1, 0)
+          58: (3, 5)
+          136: (2, 5)
+          7: (3, 1)
+Time (s): 0.457005
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 833 (log(k(c)) = 6.72481)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -73.9309
+Accuracy: 0.87
+Indices: {109, 58, 119, 7}
+          109: (1, 0)
+          58: (3, 5)
+          119: (2, 5)
+          7: (3, 1)
+Time (s): 0.456715
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 20.3278 (log(k(g)) = 3.01199)
+Optimal k(c): 683.073 (log(k(c)) = 6.5266)
+Optimal Initial Elo Scores:
+  0: 103.353
+  1: -159.558
+  2: -17.0538
+  3: -28.5298
+  4: 20.5997
+  5: 81.1862
+Final Elo Scores:
+  0: -533.819
+  1: 373.93
+  2: 37.0779
+  3: 288.645
+  4: 45.6406
+  5: -211.479
+Final Ranking: {1, 3, 4, 2, 5, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -68.2339
+Accuracy: 0.865
+Indices: {7, 58, 109}
+          7: (3, 1)
+          58: (3, 5)
+          109: (1, 0)
+Time (s): 0.305307
+
+
+Total Time (s): 1.22493

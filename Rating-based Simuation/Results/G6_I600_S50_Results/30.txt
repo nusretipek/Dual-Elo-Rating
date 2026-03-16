@@ -1,0 +1,94 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -255.259
+Accuracy: 0.821667
+Optimal k(g): 50.6585 (log(k(g)) = 3.92511)
+Optimal Initial Elo Scores:
+  0: 12.1026
+  1: -118.972
+  2: -148.593
+  3: -65.4085
+  4: 169.569
+  5: 151.336
+Final Elo Scores:
+  0: 305.652
+  1: 26.5264
+  2: 147.769
+  3: -302.805
+  4: -246.313
+  5: 69.2055
+Final Ranking: {0, 2, 5, 1, 4, 3}
+Time (s): 0.0442056
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 381 (log(k(c)) = 5.94283)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -239.704
+Accuracy: 0.838333
+Indices: {307, 265}
+          307: (1, 4)
+          265: (4, 3)
+Time (s): 4.82751
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 488 (log(k(c)) = 6.18965)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -238.537
+Accuracy: 0.836667
+Indices: {307, 265}
+          307: (1, 4)
+          265: (4, 3)
+Time (s): 4.74009
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 31.2411 (log(k(g)) = 3.44174)
+Optimal k(c): 450.673 (log(k(c)) = 6.11074)
+Optimal Initial Elo Scores:
+  0: 37.5626
+  1: -119.309
+  2: -145.587
+  3: -67.1998
+  4: 147.406
+  5: 147.161
+Final Elo Scores:
+  0: 286.265
+  1: 30.1745
+  2: 125.507
+  3: -303.256
+  4: -223.691
+  5: 85.0338
+Final Ranking: {0, 2, 5, 1, 4, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -239.021
+Accuracy: 0.828333
+Indices: {307}
+          307: (1, 4)
+Time (s): 0.0624041
+
+
+Total Time (s): 9.67512

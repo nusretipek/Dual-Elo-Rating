@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -294.053
+Accuracy: 0.761667
+Optimal k(g): 63.8975 (log(k(g)) = 4.15728)
+Optimal Initial Elo Scores:
+  0: -91.4413
+  1: -36.3346
+  2: 21.6699
+  3: 65.7427
+  4: -48.6281
+  5: 88.9937
+Final Elo Scores:
+  0: -102.532
+  1: 198.891
+  2: -255.518
+  3: -206.092
+  4: 71.3603
+  5: 293.893
+Final Ranking: {5, 1, 4, 0, 3, 2}
+Time (s): 0.0147845
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 449 (log(k(c)) = 6.10728)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -271.041
+Accuracy: 0.793333
+Indices: {198, 327}
+          198: (2, 5)
+          327: (5, 2)
+Time (s): 5.22587
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 449 (log(k(c)) = 6.10628)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -271.041
+Accuracy: 0.793333
+Indices: {198, 327}
+          198: (2, 5)
+          327: (5, 2)
+Time (s): 5.05033
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 45.546 (log(k(g)) = 3.81872)
+Optimal k(c): 422.846 (log(k(c)) = 6.04701)
+Optimal Initial Elo Scores:
+  0: -77.3007
+  1: -13.4167
+  2: 7.45598
+  3: 56.94
+  4: -66.6527
+  5: 92.9584
+Final Elo Scores:
+  0: -66.5447
+  1: 188.854
+  2: -254.715
+  3: -193.048
+  4: 67.6588
+  5: 257.779
+Final Ranking: {5, 1, 4, 0, 3, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -268.812
+Accuracy: 0.801667
+Indices: {198, 327}
+          198: (2, 5)
+          327: (5, 2)
+Time (s): 0.0303642
+
+
+Total Time (s): 10.3222

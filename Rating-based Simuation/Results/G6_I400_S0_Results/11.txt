@@ -1,0 +1,94 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -152.626
+Accuracy: 0.82
+Optimal k(g): 67.065 (log(k(g)) = 4.20566)
+Optimal Initial Elo Scores:
+  0: 41.475
+  1: 82.3086
+  2: 2.41205
+  3: -36.3673
+  4: -112.023
+  5: 22.2016
+Final Elo Scores:
+  0: -145.649
+  1: -211.608
+  2: 396.235
+  3: 255.395
+  4: 43.6567
+  5: -338.021
+Final Ranking: {2, 3, 4, 0, 1, 5}
+Time (s): 0.0134125
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 605 (log(k(c)) = 6.40526)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -135.488
+Accuracy: 0.8475
+Indices: {147}
+          147: (2, 5)
+Time (s): 1.96492
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 625 (log(k(c)) = 6.43832)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -133.351
+Accuracy: 0.85
+Indices: {147, 299, 285}
+          147: (2, 5)
+          299: (2, 4)
+          285: (4, 0)
+Time (s): 1.84198
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 44.6879 (log(k(g)) = 3.7997)
+Optimal k(c): 595.898 (log(k(c)) = 6.39007)
+Optimal Initial Elo Scores:
+  0: 41.475
+  1: 82.3085
+  2: 2.412
+  3: -36.3672
+  4: -112.023
+  5: 22.2017
+Final Elo Scores:
+  0: -140.754
+  1: -211.02
+  2: 420.565
+  3: 293.691
+  4: 45.0789
+  5: -407.553
+Final Ranking: {2, 3, 4, 0, 1, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -133.782
+Accuracy: 0.845
+Indices: {147}
+          147: (2, 5)
+Time (s): 0.168321
+
+
+Total Time (s): 3.98909

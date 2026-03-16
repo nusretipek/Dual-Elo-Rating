@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -158.044
+Accuracy: 0.8425
+Optimal k(g): 94.6401 (log(k(g)) = 4.55008)
+Optimal Initial Elo Scores:
+  0: 56.7613
+  1: -96.3942
+  2: 118.812
+  3: -53.8722
+  4: 67.4066
+  5: -92.7134
+Final Elo Scores:
+  0: -44.4662
+  1: 141.928
+  2: 233.153
+  3: -329.858
+  4: -285.247
+  5: 284.49
+Final Ranking: {5, 2, 1, 0, 4, 3}
+Time (s): 0.0159986
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 428 (log(k(c)) = 6.06008)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -140.485
+Accuracy: 0.8625
+Indices: {165, 8, 278}
+          165: (5, 3)
+          8: (3, 5)
+          278: (1, 4)
+Time (s): 1.76866
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 431 (log(k(c)) = 6.06648)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -140.442
+Accuracy: 0.86
+Indices: {165, 8, 278}
+          165: (5, 3)
+          8: (3, 5)
+          278: (1, 4)
+Time (s): 1.75889
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 26.9854 (log(k(g)) = 3.29529)
+Optimal k(c): 599.498 (log(k(c)) = 6.39609)
+Optimal Initial Elo Scores:
+  0: 92.6128
+  1: -47.2851
+  2: 58.6925
+  3: -13.8568
+  4: 9.37462
+  5: -99.5248
+Final Elo Scores:
+  0: -61.0648
+  1: 225.133
+  2: 198.673
+  3: -352.723
+  4: -285.809
+  5: 275.804
+Final Ranking: {5, 1, 2, 0, 4, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -131.21
+Accuracy: 0.86
+Indices: {8, 165, 278}
+          8: (3, 5)
+          165: (5, 3)
+          278: (1, 4)
+Time (s): 0.0919821
+
+
+Total Time (s): 3.63597

@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -91.6684
+Accuracy: 0.805
+Optimal k(g): 101.369 (log(k(g)) = 4.61876)
+Optimal Initial Elo Scores:
+  0: 51.9101
+  1: 137.181
+  2: -75.1898
+  3: 30.0717
+  4: -98.5294
+  5: -45.4331
+Final Elo Scores:
+  0: -374.673
+  1: -73.9391
+  2: 116.883
+  3: -21.7759
+  4: 390.299
+  5: -36.7829
+Final Ranking: {4, 2, 3, 5, 1, 0}
+Time (s): 0.00435424
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 566 (log(k(c)) = 6.33937)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -78.4459
+Accuracy: 0.845
+Indices: {100, 38}
+          100: (3, 0)
+          38: (4, 3)
+Time (s): 0.462755
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 502 (log(k(c)) = 6.21876)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -77.4735
+Accuracy: 0.845
+Indices: {100, 39, 38}
+          100: (3, 0)
+          39: (4, 1)
+          38: (4, 3)
+Time (s): 0.523138
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 1.23147e-133 (log(k(g)) = -306.036)
+Optimal k(c): 483.901 (log(k(c)) = 6.18188)
+Optimal Initial Elo Scores:
+  0: 82.3126
+  1: 139.683
+  2: 75.5521
+  3: 38.3949
+  4: -294.122
+  5: -41.818
+Final Elo Scores:
+  0: -398.686
+  1: -62.3554
+  2: 75.5521
+  3: 52.2921
+  4: 375.018
+  5: -41.818
+Final Ranking: {4, 2, 3, 5, 1, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -63.4922
+Accuracy: 0.875
+Indices: {38, 39, 100}
+          38: (4, 3)
+          39: (4, 1)
+          100: (3, 0)
+Time (s): 0.0540999
+
+
+Total Time (s): 1.04467

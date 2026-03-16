@@ -1,0 +1,94 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -207.1
+Accuracy: 0.853333
+Optimal k(g): 87.5689 (log(k(g)) = 4.47243)
+Optimal Initial Elo Scores:
+  0: 34.8333
+  1: 33.5656
+  2: -60.0574
+  3: -4.57694
+  4: 7.82105
+  5: -11.5881
+Final Elo Scores:
+  0: -508.551
+  1: 119.726
+  2: 395.102
+  3: -239.227
+  4: 314.429
+  5: -81.4827
+Final Ranking: {2, 4, 1, 5, 3, 0}
+Time (s): 0.0281759
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 563 (log(k(c)) = 6.33243)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -189.342
+Accuracy: 0.871667
+Indices: {259, 278}
+          259: (4, 0)
+          278: (2, 0)
+Time (s): 5.55923
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 647 (log(k(c)) = 6.47243)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -188.795
+Accuracy: 0.873333
+Indices: {259, 324}
+          259: (4, 0)
+          324: (1, 0)
+Time (s): 4.70729
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 59.2548 (log(k(g)) = 4.08185)
+Optimal k(c): 562.072 (log(k(c)) = 6.33163)
+Optimal Initial Elo Scores:
+  0: 24.9016
+  1: 31.5276
+  2: -32.4393
+  3: 9.17316
+  4: -40.6912
+  5: 7.53301
+Final Elo Scores:
+  0: -472.823
+  1: 109.859
+  2: 343.422
+  3: -221.787
+  4: 310.283
+  5: -68.9503
+Final Ranking: {2, 4, 1, 5, 3, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -188.812
+Accuracy: 0.871667
+Indices: {259}
+          259: (4, 0)
+Time (s): 0.0609692
+
+
+Total Time (s): 10.3566

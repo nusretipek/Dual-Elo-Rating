@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -252.922
+Accuracy: 0.825
+Optimal k(g): 53.5684 (log(k(g)) = 3.98096)
+Optimal Initial Elo Scores:
+  0: -129.075
+  1: 24.6861
+  2: 66.9237
+  3: 33.6503
+  4: 53.492
+  5: -49.6649
+Final Elo Scores:
+  0: 10.2201
+  1: 70.5094
+  2: -397.539
+  3: 292.501
+  4: 88.5732
+  5: -64.2524
+Final Ranking: {3, 4, 1, 0, 5, 2}
+Time (s): 0.0442318
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 596 (log(k(c)) = 6.39096)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -230.24
+Accuracy: 0.845
+Indices: {351, 118}
+          351: (0, 2)
+          118: (3, 5)
+Time (s): 5.05536
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 663 (log(k(c)) = 6.49725)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -229.083
+Accuracy: 0.846667
+Indices: {351, 118, 278}
+          351: (0, 2)
+          118: (3, 5)
+          278: (4, 0)
+Time (s): 5.03863
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 27.8629 (log(k(g)) = 3.3273)
+Optimal k(c): 590.518 (log(k(c)) = 6.381)
+Optimal Initial Elo Scores:
+  0: -129.321
+  1: 16.8133
+  2: 97.3159
+  3: 39.7452
+  4: 58.1081
+  5: -82.6353
+Final Elo Scores:
+  0: 47.7246
+  1: 60.157
+  2: -489.394
+  3: 325.853
+  4: 124.311
+  5: -68.625
+Final Ranking: {3, 4, 1, 0, 5, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -228.279
+Accuracy: 0.848333
+Indices: {118, 351}
+          118: (3, 5)
+          351: (0, 2)
+Time (s): 0.0973855
+
+
+Total Time (s): 10.2366

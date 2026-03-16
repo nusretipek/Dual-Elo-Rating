@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -247.399
+Accuracy: 0.826667
+Optimal k(g): 41.6922 (log(k(g)) = 3.73032)
+Optimal Initial Elo Scores:
+  0: 1.5218
+  1: 184.226
+  2: -111.749
+  3: -161.396
+  4: 88.3803
+  5: -0.951712
+Final Elo Scores:
+  0: -147.074
+  1: 307.119
+  2: -92.5922
+  3: 224.828
+  4: -318.578
+  5: 26.3274
+Final Ranking: {1, 3, 5, 2, 0, 4}
+Time (s): 0.0451332
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 514 (log(k(c)) = 6.24188)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -230.212
+Accuracy: 0.84
+Indices: {375, 211}
+          375: (3, 4)
+          211: (1, 4)
+Time (s): 5.47553
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 652 (log(k(c)) = 6.48032)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -229.938
+Accuracy: 0.84
+Indices: {375, 211}
+          375: (3, 4)
+          211: (1, 4)
+Time (s): 5.17712
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 5.59186e-75 (log(k(g)) = -170.973)
+Optimal k(c): 975.195 (log(k(c)) = 6.88264)
+Optimal Initial Elo Scores:
+  0: -92.7307
+  1: 190.169
+  2: -27.775
+  3: -142.775
+  4: 57.2453
+  5: 15.8777
+Final Elo Scores:
+  0: -92.7307
+  1: 394.263
+  2: -27.775
+  3: 334.892
+  4: -624.516
+  5: 15.8777
+Final Ranking: {1, 3, 5, 2, 0, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -219.763
+Accuracy: 0.836667
+Indices: {211, 375}
+          211: (1, 4)
+          375: (3, 4)
+Time (s): 0.0846681
+
+
+Total Time (s): 10.7833

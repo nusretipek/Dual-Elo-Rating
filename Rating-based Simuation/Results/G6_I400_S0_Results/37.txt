@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -138.675
+Accuracy: 0.865
+Optimal k(g): 81.6718 (log(k(g)) = 4.40271)
+Optimal Initial Elo Scores:
+  0: -76.5017
+  1: -197.535
+  2: 160.195
+  3: 281.869
+  4: -55.3862
+  5: -112.655
+Final Elo Scores:
+  0: -110.782
+  1: -84.5352
+  2: 151.395
+  3: 402.379
+  4: 40.3976
+  5: -398.868
+Final Ranking: {3, 2, 4, 1, 0, 5}
+Time (s): 0.0150801
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 574 (log(k(c)) = 6.35207)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -115.597
+Accuracy: 0.8925
+Indices: {151, 234, 266}
+          151: (5, 2)
+          234: (2, 5)
+          266: (4, 5)
+Time (s): 1.89793
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 552 (log(k(c)) = 6.31271)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -115.154
+Accuracy: 0.89
+Indices: {151, 234, 261}
+          151: (5, 2)
+          234: (2, 5)
+          261: (4, 5)
+Time (s): 1.87695
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 0 (log(k(g)) = -1782.9)
+Optimal k(c): 501.652 (log(k(c)) = 6.21791)
+Optimal Initial Elo Scores:
+  0: -65.9038
+  1: -193.645
+  2: 208.556
+  3: 386.328
+  4: -123.247
+  5: -212.059
+Final Elo Scores:
+  0: -65.9038
+  1: -193.645
+  2: 214.216
+  3: 386.328
+  4: 17.19
+  5: -358.156
+Final Ranking: {3, 2, 4, 0, 1, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -105.442
+Accuracy: 0.91
+Indices: {151, 234, 261}
+          151: (5, 2)
+          234: (2, 5)
+          261: (4, 5)
+Time (s): 0.217404
+
+
+Total Time (s): 4.0078

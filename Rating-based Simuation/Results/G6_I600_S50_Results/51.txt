@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -267.558
+Accuracy: 0.803333
+Optimal k(g): 58.0138 (log(k(g)) = 4.06068)
+Optimal Initial Elo Scores:
+  0: -122.376
+  1: 5.88334
+  2: 130.915
+  3: 21.2772
+  4: 35.0397
+  5: -70.6773
+Final Elo Scores:
+  0: -218.656
+  1: 15.2835
+  2: -157.68
+  3: 349.621
+  4: -108.638
+  5: 120.131
+Final Ranking: {3, 5, 1, 4, 2, 0}
+Time (s): 0.0240385
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 639 (log(k(c)) = 6.46068)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -240.302
+Accuracy: 0.83
+Indices: {308, 176}
+          308: (3, 2)
+          176: (2, 3)
+Time (s): 5.13722
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 639 (log(k(c)) = 6.46068)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -240.302
+Accuracy: 0.83
+Indices: {308, 176}
+          308: (3, 2)
+          176: (2, 3)
+Time (s): 5.20197
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 20.2615 (log(k(g)) = 3.00872)
+Optimal k(c): 565.603 (log(k(c)) = 6.33789)
+Optimal Initial Elo Scores:
+  0: -133.619
+  1: 65.4537
+  2: 132.219
+  3: 12.3451
+  4: -27.1924
+  5: -49.146
+Final Elo Scores:
+  0: -175.251
+  1: 11.562
+  2: -232.481
+  3: 334.889
+  4: -47.1061
+  5: 108.448
+Final Ranking: {3, 5, 1, 4, 0, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -232.29
+Accuracy: 0.836667
+Indices: {176, 308}
+          176: (2, 3)
+          308: (3, 2)
+Time (s): 0.0679579
+
+
+Total Time (s): 10.4322

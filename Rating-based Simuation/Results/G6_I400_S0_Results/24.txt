@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -187.716
+Accuracy: 0.7825
+Optimal k(g): 58.1442 (log(k(g)) = 4.06293)
+Optimal Initial Elo Scores:
+  0: 18.6617
+  1: -49.346
+  2: -98.1611
+  3: -18.7707
+  4: 228.264
+  5: -80.6494
+Final Elo Scores:
+  0: -94.728
+  1: -98.6289
+  2: 53.7758
+  3: -140.34
+  4: 322.241
+  5: -42.3213
+Final Ranking: {4, 2, 5, 0, 1, 3}
+Time (s): 0.0142465
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 484 (log(k(c)) = 6.18224)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -161.039
+Accuracy: 0.81
+Indices: {62, 239}
+          62: (1, 3)
+          239: (3, 1)
+Time (s): 1.97835
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 503 (log(k(c)) = 6.22039)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -160.23
+Accuracy: 0.815
+Indices: {62, 239, 14}
+          62: (1, 3)
+          239: (3, 1)
+          14: (4, 0)
+Time (s): 2.21906
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 31.4286 (log(k(g)) = 3.44772)
+Optimal k(c): 447.172 (log(k(c)) = 6.10294)
+Optimal Initial Elo Scores:
+  0: 18.6622
+  1: -49.3473
+  2: -98.1616
+  3: -18.7702
+  4: 228.264
+  5: -80.6489
+Final Elo Scores:
+  0: -95.7311
+  1: -101.019
+  2: 56.4181
+  3: -92.0262
+  4: 287.038
+  5: -54.6819
+Final Ranking: {4, 2, 5, 3, 0, 1}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -157.104
+Accuracy: 0.8175
+Indices: {62, 239}
+          62: (1, 3)
+          239: (3, 1)
+Time (s): 0.161817
+
+
+Total Time (s): 4.37387

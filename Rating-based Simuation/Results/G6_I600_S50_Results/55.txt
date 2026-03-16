@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -185.477
+Accuracy: 0.861667
+Optimal k(g): 62.9952 (log(k(g)) = 4.14306)
+Optimal Initial Elo Scores:
+  0: 114.97
+  1: 50.3019
+  2: 35.3888
+  3: -134.814
+  4: -47.2783
+  5: -18.5853
+Final Elo Scores:
+  0: -473.946
+  1: 365.627
+  2: -147.202
+  3: -157.363
+  4: 372.507
+  5: 40.3597
+Final Ranking: {4, 1, 5, 2, 3, 0}
+Time (s): 0.0233183
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 634 (log(k(c)) = 6.4513)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -171.458
+Accuracy: 0.873333
+Indices: {99}
+          99: (1, 0)
+Time (s): 4.69377
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 604 (log(k(c)) = 6.40306)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -167.758
+Accuracy: 0.876667
+Indices: {99, 357, 473, 337}
+          99: (1, 0)
+          357: (2, 0)
+          473: (4, 2)
+          337: (4, 2)
+Time (s): 4.46675
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 0 (log(k(g)) = -1259.52)
+Optimal k(c): 905.81 (log(k(c)) = 6.80883)
+Optimal Initial Elo Scores:
+  0: 54.4342
+  1: 72.3647
+  2: -66.0362
+  3: -139.52
+  4: 69.073
+  5: 9.68491
+Final Elo Scores:
+  0: -357.975
+  1: 484.774
+  2: -66.0362
+  3: -139.52
+  4: 69.073
+  5: 9.68491
+Final Ranking: {1, 4, 5, 2, 3, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -176.337
+Accuracy: 0.883333
+Indices: {99}
+          99: (1, 0)
+Time (s): 0.385828
+
+
+Total Time (s): 9.57063

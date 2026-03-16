@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -271.517
+Accuracy: 0.796667
+Optimal k(g): 43.5825 (log(k(g)) = 3.77466)
+Optimal Initial Elo Scores:
+  0: 144.272
+  1: 15.9235
+  2: -25.5461
+  3: 50.1081
+  4: -139.291
+  5: -45.435
+Final Elo Scores:
+  0: 65.038
+  1: 163.775
+  2: -127.205
+  3: 120.589
+  4: 145.906
+  5: -368.071
+Final Ranking: {1, 4, 3, 0, 2, 5}
+Time (s): 0.0245008
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 462 (log(k(c)) = 6.13466)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -251.751
+Accuracy: 0.815
+Indices: {586, 295}
+          586: (4, 0)
+          295: (4, 5)
+Time (s): 6.80134
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 579 (log(k(c)) = 6.36063)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -249.995
+Accuracy: 0.816667
+Indices: {295, 586, 64}
+          295: (4, 5)
+          586: (4, 0)
+          64: (3, 2)
+Time (s): 5.46172
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 23.2878 (log(k(g)) = 3.14793)
+Optimal k(c): 467.093 (log(k(c)) = 6.14653)
+Optimal Initial Elo Scores:
+  0: 139.712
+  1: 9.35456
+  2: -39.9284
+  3: 64.4041
+  4: -135.684
+  5: -37.8288
+Final Elo Scores:
+  0: 91.5308
+  1: 177.913
+  2: -121.26
+  3: 136.988
+  4: 127.836
+  5: -412.978
+Final Ranking: {1, 3, 4, 0, 2, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -250.636
+Accuracy: 0.801667
+Indices: {295}
+          295: (4, 5)
+Time (s): 0.0510799
+
+
+Total Time (s): 12.3393

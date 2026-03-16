@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -260.29
+Accuracy: 0.818333
+Optimal k(g): 58.1397 (log(k(g)) = 4.06285)
+Optimal Initial Elo Scores:
+  0: -28.0846
+  1: 80.2796
+  2: -120.152
+  3: 118.4
+  4: -68.6226
+  5: 18.1968
+Final Elo Scores:
+  0: 259.259
+  1: 171.54
+  2: -38.8263
+  3: -241.657
+  4: -263.46
+  5: 113.161
+Final Ranking: {0, 1, 5, 2, 3, 4}
+Time (s): 0.019149
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 546 (log(k(c)) = 6.30285)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -226.953
+Accuracy: 0.841667
+Indices: {308, 114}
+          308: (3, 2)
+          114: (2, 3)
+Time (s): 4.50793
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 604 (log(k(c)) = 6.40285)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -225.965
+Accuracy: 0.845
+Indices: {308, 114, 454}
+          308: (3, 2)
+          114: (2, 3)
+          454: (1, 4)
+Time (s): 4.60794
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 35.7502 (log(k(g)) = 3.57656)
+Optimal k(c): 507.841 (log(k(c)) = 6.23017)
+Optimal Initial Elo Scores:
+  0: 1.67943
+  1: 82.8112
+  2: -123.976
+  3: 133.217
+  4: -117.699
+  5: 23.9628
+Final Elo Scores:
+  0: 230.844
+  1: 128.318
+  2: -33.2602
+  3: -201.162
+  4: -247.574
+  5: 122.83
+Final Ranking: {0, 1, 5, 2, 3, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -224.262
+Accuracy: 0.835
+Indices: {114, 308}
+          114: (2, 3)
+          308: (3, 2)
+Time (s): 0.105294
+
+
+Total Time (s): 9.24114

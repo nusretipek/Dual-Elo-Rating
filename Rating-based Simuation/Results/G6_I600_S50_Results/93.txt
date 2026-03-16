@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -269.67
+Accuracy: 0.793333
+Optimal k(g): 67.8014 (log(k(g)) = 4.21658)
+Optimal Initial Elo Scores:
+  0: -3.23808
+  1: -75.8403
+  2: -32.8332
+  3: -96.4044
+  4: 84.3811
+  5: 123.942
+Final Elo Scores:
+  0: 10.9172
+  1: -142.819
+  2: 388.588
+  3: 185.083
+  4: -72.8449
+  5: -368.917
+Final Ranking: {2, 3, 0, 4, 1, 5}
+Time (s): 0.0173691
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 394 (log(k(c)) = 5.97658)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -246.037
+Accuracy: 0.816667
+Indices: {145, 275, 493}
+          145: (2, 3)
+          275: (3, 1)
+          493: (2, 3)
+Time (s): 4.05074
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 501 (log(k(c)) = 6.21658)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -244.333
+Accuracy: 0.82
+Indices: {145, 275, 493, 549}
+          145: (2, 3)
+          275: (3, 1)
+          493: (2, 3)
+          549: (4, 5)
+Time (s): 4.45709
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 48.8363 (log(k(g)) = 3.88847)
+Optimal k(c): 442.863 (log(k(c)) = 6.09326)
+Optimal Initial Elo Scores:
+  0: -3.23813
+  1: -75.8404
+  2: -32.8331
+  3: -96.4041
+  4: 84.3811
+  5: 123.941
+Final Elo Scores:
+  0: 20.4195
+  1: -131.441
+  2: 352.183
+  3: 170.578
+  4: -69.5273
+  5: -342.205
+Final Ranking: {2, 3, 0, 4, 1, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -244.713
+Accuracy: 0.82
+Indices: {145, 275}
+          145: (2, 3)
+          275: (3, 1)
+Time (s): 0.489184
+
+
+Total Time (s): 9.01491

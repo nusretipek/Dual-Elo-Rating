@@ -1,0 +1,119 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+Optimized Elo unbounded optimization failed: The objective function generated non-finite outputs.
+Using find min box constrained method...
+
+Optimized Elo: Results 
+ ---------------
+Loss: -90.4075
+Accuracy: 0.8
+Optimal k(g): 4.53999e-05 (log(k(g)) = -10)
+Optimal Initial Elo Scores:
+  0: 111.571
+  1: 161.411
+  2: -93.5703
+  3: 149.477
+  4: 22.6205
+  5: 99.3851
+  6: -13.0943
+  7: -23.4418
+  8: -123.663
+  9: -290.9
+Final Elo Scores:
+  0: 111.571
+  1: 161.411
+  2: -93.5703
+  3: 149.477
+  4: 22.6205
+  5: 99.3851
+  6: -13.0943
+  7: -23.4418
+  8: -123.663
+  9: -290.9
+Final Ranking: {1, 3, 0, 5, 4, 6, 7, 2, 8, 9}
+Time (s): 0.0371512
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 973 (log(k(c)) = 6.88008)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -80.4889
+Accuracy: 0.835
+Indices: {147, 177, 135, 196, 132}
+          147: (5, 4)
+          177: (4, 9)
+          135: (0, 8)
+          196: (3, 4)
+          132: (5, 9)
+Time (s): 0.842099
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 944 (log(k(c)) = 6.85)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -80.5858
+Accuracy: 0.835
+Indices: {147, 177, 135, 132, 196}
+          147: (5, 4)
+          177: (4, 9)
+          135: (0, 8)
+          132: (5, 9)
+          196: (3, 4)
+Time (s): 0.848363
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 4.23359e-05 (log(k(g)) = -10.0699)
+Optimal k(c): 922.61 (log(k(c)) = 6.82721)
+Optimal Initial Elo Scores:
+  0: 61.658
+  1: 158.273
+  2: -116.744
+  3: 151.246
+  4: 68.8433
+  5: 68.2436
+  6: -22.9826
+  7: -20.0185
+  8: -39.9063
+  9: -308.818
+Final Elo Scores:
+  0: 306.958
+  1: 158.273
+  2: -116.744
+  3: 151.246
+  4: -393.845
+  5: 530.932
+  6: -22.9826
+  7: -20.0186
+  8: -285.207
+  9: -308.818
+Final Ranking: {5, 0, 1, 3, 7, 6, 2, 8, 9, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -83.4865
+Accuracy: 0.81
+Indices: {135, 147}
+          135: (0, 8)
+          147: (5, 4)
+Time (s): 0.241379
+
+
+Total Time (s): 1.96937

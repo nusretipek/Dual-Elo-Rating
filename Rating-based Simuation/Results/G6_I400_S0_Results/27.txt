@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -161.264
+Accuracy: 0.8325
+Optimal k(g): 63.0604 (log(k(g)) = 4.14409)
+Optimal Initial Elo Scores:
+  0: 67.05
+  1: -187.974
+  2: -50.5829
+  3: 78.3138
+  4: 13.5972
+  5: 79.6127
+Final Elo Scores:
+  0: 204.778
+  1: 308.656
+  2: -69.3688
+  3: -161.031
+  4: 105.859
+  5: -388.877
+Final Ranking: {1, 0, 4, 2, 3, 5}
+Time (s): 0.0111853
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 661 (log(k(c)) = 6.49409)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -139.526
+Accuracy: 0.855
+Indices: {155, 22}
+          155: (1, 5)
+          22: (5, 1)
+Time (s): 2.0797
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 652 (log(k(c)) = 6.48073)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -138.328
+Accuracy: 0.855
+Indices: {155, 22, 294}
+          155: (1, 5)
+          22: (5, 1)
+          294: (0, 3)
+Time (s): 1.98377
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 0 (log(k(g)) = -1197.23)
+Optimal k(c): 564.203 (log(k(c)) = 6.33541)
+Optimal Initial Elo Scores:
+  0: 98.4658
+  1: -180.053
+  2: -133.024
+  3: 24.0305
+  4: 41.4175
+  5: 149.177
+Final Elo Scores:
+  0: 280.169
+  1: 363.931
+  2: -133.024
+  3: -157.673
+  4: 41.4175
+  5: -394.807
+Final Ranking: {1, 0, 4, 2, 3, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -126.21
+Accuracy: 0.8825
+Indices: {155, 294}
+          155: (1, 5)
+          294: (0, 3)
+Time (s): 0.257802
+
+
+Total Time (s): 4.33287

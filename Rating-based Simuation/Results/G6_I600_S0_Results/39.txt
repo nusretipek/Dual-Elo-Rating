@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -255.801
+Accuracy: 0.823333
+Optimal k(g): 66.961 (log(k(g)) = 4.20411)
+Optimal Initial Elo Scores:
+  0: 101.165
+  1: -149.439
+  2: -19.5819
+  3: -84.9779
+  4: 82.6718
+  5: 70.1551
+Final Elo Scores:
+  0: 178.72
+  1: -99.062
+  2: -50.3346
+  3: 330.451
+  4: -275.757
+  5: -84.0241
+Final Ranking: {3, 0, 2, 5, 1, 4}
+Time (s): 0.0223995
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 540 (log(k(c)) = 6.29078)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -221.987
+Accuracy: 0.845
+Indices: {393, 231}
+          393: (5, 4)
+          231: (3, 5)
+Time (s): 4.41768
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 540 (log(k(c)) = 6.29078)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -221.987
+Accuracy: 0.845
+Indices: {393, 231}
+          393: (5, 4)
+          231: (3, 5)
+Time (s): 4.429
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 34.3966 (log(k(g)) = 3.53796)
+Optimal k(c): 484.893 (log(k(c)) = 6.18393)
+Optimal Initial Elo Scores:
+  0: 126.246
+  1: -163.269
+  2: -14.8577
+  3: -95.7629
+  4: 96.7977
+  5: 50.8467
+Final Elo Scores:
+  0: 139.881
+  1: -122.058
+  2: -63.4548
+  3: 320.409
+  4: -268.399
+  5: -6.37657
+Final Ranking: {3, 0, 5, 2, 1, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -216.497
+Accuracy: 0.845
+Indices: {231, 393}
+          231: (3, 5)
+          393: (5, 4)
+Time (s): 0.0310661
+
+
+Total Time (s): 8.90064

@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -173.146
+Accuracy: 0.8175
+Optimal k(g): 61.4326 (log(k(g)) = 4.11794)
+Optimal Initial Elo Scores:
+  0: 97.2154
+  1: -64.2485
+  2: 87.3776
+  3: 32.5545
+  4: -182.005
+  5: 29.0943
+Final Elo Scores:
+  0: -289.503
+  1: -80.1666
+  2: -141.181
+  3: 296.998
+  4: 188.701
+  5: 25.1405
+Final Ranking: {3, 4, 5, 1, 2, 0}
+Time (s): 0.0225079
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 397 (log(k(c)) = 5.98405)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -159.459
+Accuracy: 0.8275
+Indices: {215, 284}
+          215: (4, 0)
+          284: (3, 1)
+Time (s): 2.13862
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 465 (log(k(c)) = 6.14303)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -158.232
+Accuracy: 0.835
+Indices: {215, 284, 275}
+          215: (4, 0)
+          284: (3, 1)
+          275: (4, 5)
+Time (s): 2.07485
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 29.3667 (log(k(g)) = 3.37986)
+Optimal k(c): 450.064 (log(k(c)) = 6.10939)
+Optimal Initial Elo Scores:
+  0: 100.677
+  1: -89.9155
+  2: 133.994
+  3: 76.6848
+  4: -284.18
+  5: 62.7113
+Final Elo Scores:
+  0: -319.094
+  1: -51.7635
+  2: -81.887
+  3: 274.625
+  4: 173.501
+  5: 4.59046
+Final Ranking: {3, 4, 5, 1, 2, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -156.016
+Accuracy: 0.8275
+Indices: {215}
+          215: (4, 0)
+Time (s): 0.247654
+
+
+Total Time (s): 4.48419

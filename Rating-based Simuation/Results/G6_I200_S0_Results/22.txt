@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -94.9009
+Accuracy: 0.765
+Optimal k(g): 59.1778 (log(k(g)) = 4.08055)
+Optimal Initial Elo Scores:
+  0: 37.8787
+  1: -53.7834
+  2: 9.72924
+  3: 104.086
+  4: -118.81
+  5: 20.8978
+Final Elo Scores:
+  0: -275.481
+  1: -157.411
+  2: 103.385
+  3: 67.6532
+  4: 217.97
+  5: 43.8832
+Final Ranking: {4, 2, 3, 5, 1, 0}
+Time (s): 0.00669281
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 544 (log(k(c)) = 6.29884)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -80.5302
+Accuracy: 0.805
+Indices: {107, 26}
+          107: (4, 0)
+          26: (2, 4)
+Time (s): 0.516497
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 561 (log(k(c)) = 6.33055)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -79.9037
+Accuracy: 0.805
+Indices: {107, 26, 93}
+          107: (4, 0)
+          26: (2, 4)
+          93: (2, 1)
+Time (s): 0.547681
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 4.44717e-06 (log(k(g)) = -12.3232)
+Optimal k(c): 544.83 (log(k(c)) = 6.30047)
+Optimal Initial Elo Scores:
+  0: 40.0248
+  1: -93.0661
+  2: 49.8537
+  3: 105.533
+  4: -136.92
+  5: 34.573
+Final Elo Scores:
+  0: -425.472
+  1: -198.34
+  2: 155.128
+  3: 105.533
+  4: 328.577
+  5: 34.573
+Final Ranking: {4, 2, 3, 5, 1, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -69.2519
+Accuracy: 0.84
+Indices: {93, 107}
+          93: (2, 1)
+          107: (4, 0)
+Time (s): 0.108281
+
+
+Total Time (s): 1.17946

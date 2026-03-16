@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -144.82
+Accuracy: 0.85
+Optimal k(g): 98.7422 (log(k(g)) = 4.59251)
+Optimal Initial Elo Scores:
+  0: 1.11716
+  1: -166.62
+  2: 114.523
+  3: -40.0288
+  4: -34.2536
+  5: 125.254
+Final Elo Scores:
+  0: 419.73
+  1: -260.12
+  2: 146.704
+  3: 102.999
+  4: 32.951
+  5: -442.273
+Final Ranking: {0, 2, 3, 4, 1, 5}
+Time (s): 0.0158455
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 494 (log(k(c)) = 6.20251)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -131.889
+Accuracy: 0.87
+Indices: {90, 246, 252}
+          90: (0, 5)
+          246: (3, 1)
+          252: (4, 5)
+Time (s): 1.81335
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 521 (log(k(c)) = 6.25592)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -131.329
+Accuracy: 0.8675
+Indices: {90, 246, 248}
+          90: (0, 5)
+          246: (3, 1)
+          248: (4, 5)
+Time (s): 1.8306
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 43.5255 (log(k(g)) = 3.77335)
+Optimal k(c): 500.657 (log(k(c)) = 6.21592)
+Optimal Initial Elo Scores:
+  0: -28.6372
+  1: -129.905
+  2: 134.294
+  3: -37.2095
+  4: -71.9004
+  5: 133.337
+Final Elo Scores:
+  0: 430.979
+  1: -329.818
+  2: 71.0101
+  3: 186.444
+  4: 74.213
+  5: -432.85
+Final Ranking: {0, 3, 4, 2, 1, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -124.69
+Accuracy: 0.87
+Indices: {90, 246, 248}
+          90: (0, 5)
+          246: (3, 1)
+          248: (4, 5)
+Time (s): 0.119051
+
+
+Total Time (s): 3.77928

@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -192.931
+Accuracy: 0.871667
+Optimal k(g): 84.2189 (log(k(g)) = 4.43342)
+Optimal Initial Elo Scores:
+  0: -20.9359
+  1: 77.6076
+  2: -146.916
+  3: -40.3191
+  4: 107.628
+  5: 22.929
+Final Elo Scores:
+  0: 182.95
+  1: 467.842
+  2: -245.684
+  3: -119.182
+  4: 83.9914
+  5: -369.924
+Final Ranking: {1, 0, 4, 3, 2, 5}
+Time (s): 0.0262392
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 883 (log(k(c)) = 6.78342)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -163.613
+Accuracy: 0.885
+Indices: {396, 46}
+          396: (1, 5)
+          46: (0, 2)
+Time (s): 5.11778
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 897 (log(k(c)) = 6.79914)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -162.568
+Accuracy: 0.886667
+Indices: {396, 46, 515}
+          396: (1, 5)
+          46: (0, 2)
+          515: (1, 0)
+Time (s): 4.54398
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 47.2676 (log(k(g)) = 3.85583)
+Optimal k(c): 704.382 (log(k(c)) = 6.55732)
+Optimal Initial Elo Scores:
+  0: -21.633
+  1: -8.12754
+  2: -101.033
+  3: -83.4005
+  4: 128.592
+  5: 85.5977
+Final Elo Scores:
+  0: 197.673
+  1: 515.143
+  2: -307.702
+  3: -160.49
+  4: 108.469
+  5: -353.096
+Final Ranking: {1, 0, 4, 3, 2, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -163.911
+Accuracy: 0.875
+Indices: {396}
+          396: (1, 5)
+Time (s): 0.131423
+
+
+Total Time (s): 9.82035

@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -274.195
+Accuracy: 0.79
+Optimal k(g): 56.0899 (log(k(g)) = 4.02696)
+Optimal Initial Elo Scores:
+  0: -43.3334
+  1: -50.0353
+  2: -10.3737
+  3: 20.3601
+  4: 113.796
+  5: -30.4188
+Final Elo Scores:
+  0: 190.802
+  1: 49.3256
+  2: -229.867
+  3: -324.127
+  4: 197.701
+  5: 116.16
+Final Ranking: {4, 0, 5, 1, 2, 3}
+Time (s): 0.0198858
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 568 (log(k(c)) = 6.34132)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -254.321
+Accuracy: 0.803333
+Indices: {287}
+          287: (5, 3)
+Time (s): 4.26868
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 683 (log(k(c)) = 6.52696)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -248.117
+Accuracy: 0.806667
+Indices: {287, 590, 281, 466}
+          287: (5, 3)
+          590: (0, 1)
+          281: (1, 5)
+          466: (1, 2)
+Time (s): 4.26889
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 32.1319 (log(k(g)) = 3.46985)
+Optimal k(c): 507.831 (log(k(c)) = 6.23015)
+Optimal Initial Elo Scores:
+  0: -12.0777
+  1: -69.9902
+  2: -11.3028
+  3: 44.6327
+  4: 121.741
+  5: -73.0063
+Final Elo Scores:
+  0: 164.8
+  1: 51.6817
+  2: -236.494
+  3: -302.913
+  4: 191.133
+  5: 131.789
+Final Ranking: {4, 0, 5, 1, 2, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -250.807
+Accuracy: 0.81
+Indices: {287}
+          287: (5, 3)
+Time (s): 0.109633
+
+
+Total Time (s): 8.66765

@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -224.138
+Accuracy: 0.833333
+Optimal k(g): 80.8684 (log(k(g)) = 4.39282)
+Optimal Initial Elo Scores:
+  0: -36.9903
+  1: 109.198
+  2: 50.7473
+  3: -116.11
+  4: -32.2853
+  5: 25.4251
+Final Elo Scores:
+  0: -192.503
+  1: -391.883
+  2: 148.535
+  3: -48.1264
+  4: 492.771
+  5: -8.80878
+Final Ranking: {4, 2, 5, 3, 0, 1}
+Time (s): 0.0213393
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 636 (log(k(c)) = 6.45559)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -209.058
+Accuracy: 0.851667
+Indices: {221}
+          221: (4, 3)
+Time (s): 4.51455
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 352 (log(k(c)) = 5.86282)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -205.357
+Accuracy: 0.858333
+Indices: {221, 217, 226, 527, 79}
+          221: (4, 3)
+          217: (4, 0)
+          226: (0, 3)
+          527: (5, 0)
+          79: (3, 2)
+Time (s): 5.36672
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 48.9993 (log(k(g)) = 3.89181)
+Optimal k(c): 331.941 (log(k(c)) = 5.80496)
+Optimal Initial Elo Scores:
+  0: -26.4895
+  1: 81.1278
+  2: 48.3274
+  3: -96.0046
+  4: -56.6212
+  5: 49.6584
+Final Elo Scores:
+  0: -151.043
+  1: -348.368
+  2: 143.663
+  3: -63.1517
+  4: 434.533
+  5: -15.6356
+Final Ranking: {4, 2, 5, 3, 0, 1}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -212.359
+Accuracy: 0.848333
+Indices: {221}
+          221: (4, 3)
+Time (s): 0.337257
+
+
+Total Time (s): 10.2406

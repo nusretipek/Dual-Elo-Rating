@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -247.32
+Accuracy: 0.831667
+Optimal k(g): 67.1128 (log(k(g)) = 4.20637)
+Optimal Initial Elo Scores:
+  0: 6.55878
+  1: -220.9
+  2: 107.377
+  3: -30.3364
+  4: -86.7932
+  5: 224.077
+Final Elo Scores:
+  0: -20.8851
+  1: 353.264
+  2: 66.909
+  3: -193.795
+  4: -350.534
+  5: 145.026
+Final Ranking: {1, 5, 2, 0, 3, 4}
+Time (s): 0.0322712
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 529 (log(k(c)) = 6.27189)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -219.364
+Accuracy: 0.85
+Indices: {375, 255}
+          375: (2, 4)
+          255: (1, 2)
+Time (s): 4.29567
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 548 (log(k(c)) = 6.30637)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -217.272
+Accuracy: 0.85
+Indices: {375, 255, 194}
+          375: (2, 4)
+          255: (1, 2)
+          194: (4, 3)
+Time (s): 4.52092
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 22.973 (log(k(g)) = 3.13432)
+Optimal k(c): 556.37 (log(k(c)) = 6.32143)
+Optimal Initial Elo Scores:
+  0: 41.4992
+  1: -285.161
+  2: 86.7063
+  3: -5.99247
+  4: -33.3315
+  5: 196.283
+Final Elo Scores:
+  0: -14.0787
+  1: 303.918
+  2: 111.685
+  3: -192.499
+  4: -279.748
+  5: 70.7263
+Final Ranking: {1, 2, 5, 0, 3, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -207.496
+Accuracy: 0.856667
+Indices: {194, 255, 375}
+          194: (4, 3)
+          255: (1, 2)
+          375: (2, 4)
+Time (s): 0.118029
+
+
+Total Time (s): 8.96742

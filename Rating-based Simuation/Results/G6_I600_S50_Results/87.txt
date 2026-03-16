@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -224.737
+Accuracy: 0.856667
+Optimal k(g): 60.5161 (log(k(g)) = 4.10291)
+Optimal Initial Elo Scores:
+  0: 162.259
+  1: -192.071
+  2: -8.38822
+  3: -130.273
+  4: 166.439
+  5: 2.03555
+Final Elo Scores:
+  0: -359.081
+  1: -9.42851
+  2: -50.9466
+  3: -179.67
+  4: 418.586
+  5: 180.543
+Final Ranking: {4, 5, 1, 2, 3, 0}
+Time (s): 0.0199107
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 544 (log(k(c)) = 6.29826)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -202.787
+Accuracy: 0.871667
+Indices: {255, 352}
+          255: (5, 0)
+          352: (4, 2)
+Time (s): 4.39551
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 611 (log(k(c)) = 6.41479)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -202.297
+Accuracy: 0.873333
+Indices: {255, 352, 262}
+          255: (5, 0)
+          352: (4, 2)
+          262: (4, 3)
+Time (s): 4.45803
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 36.0363 (log(k(g)) = 3.58453)
+Optimal k(c): 489.934 (log(k(c)) = 6.19427)
+Optimal Initial Elo Scores:
+  0: 146.015
+  1: -185.8
+  2: 4.78882
+  3: -134.48
+  4: 175.732
+  5: -6.24963
+Final Elo Scores:
+  0: -331.423
+  1: 0.316285
+  2: -48.0758
+  3: -157.452
+  4: 373.843
+  5: 162.798
+Final Ranking: {4, 5, 1, 2, 3, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -203.857
+Accuracy: 0.87
+Indices: {255}
+          255: (5, 0)
+Time (s): 0.0603306
+
+
+Total Time (s): 8.93437

@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -94.6586
+Accuracy: 0.81
+Optimal k(g): 92.6506 (log(k(g)) = 4.52884)
+Optimal Initial Elo Scores:
+  0: 56.5267
+  1: 46.16
+  2: 44.5492
+  3: -44.2147
+  4: -82.8293
+  5: -20.1918
+Final Elo Scores:
+  0: 197.396
+  1: -85.3549
+  2: 338.068
+  3: -379.678
+  4: 62.3907
+  5: -132.822
+Final Ranking: {2, 0, 4, 1, 5, 3}
+Time (s): 0.00604403
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 795 (log(k(c)) = 6.67884)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -82.0687
+Accuracy: 0.83
+Indices: {63, 59}
+          63: (2, 3)
+          59: (0, 2)
+Time (s): 0.51889
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 833 (log(k(c)) = 6.72456)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -81.2699
+Accuracy: 0.83
+Indices: {63, 59, 179}
+          63: (2, 3)
+          59: (0, 2)
+          179: (2, 1)
+Time (s): 0.485616
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 0 (log(k(g)) = -1280.32)
+Optimal k(c): 646.32 (log(k(c)) = 6.47129)
+Optimal Initial Elo Scores:
+  0: -54.1766
+  1: 78.0146
+  2: -93.6969
+  3: 75.0378
+  4: 21.1846
+  5: -26.385
+Final Elo Scores:
+  0: 205.945
+  1: 78.0146
+  2: 283.751
+  3: -562.532
+  4: 21.1846
+  5: -26.385
+Final Ranking: {2, 0, 1, 4, 5, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -77.3032
+Accuracy: 0.84
+Indices: {59, 63}
+          59: (0, 2)
+          63: (2, 3)
+Time (s): 0.0512251
+
+
+Total Time (s): 1.06211

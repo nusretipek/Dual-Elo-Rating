@@ -1,0 +1,102 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -279.739
+Accuracy: 0.773333
+Optimal k(g): 48.6234 (log(k(g)) = 3.8841)
+Optimal Initial Elo Scores:
+  0: -10.5365
+  1: 5.15262
+  2: -151.17
+  3: 168.046
+  4: -25.5679
+  5: -64.3734
+  6: 20.0055
+  7: 58.436
+Final Elo Scores:
+  0: 21.8084
+  1: -113.345
+  2: -121.382
+  3: -298.291
+  4: -191.299
+  5: 263.971
+  6: 288.401
+  7: 150.129
+Final Ranking: {6, 5, 7, 0, 1, 2, 4, 3}
+Time (s): 0.021806
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 528 (log(k(c)) = 6.26993)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -260.326
+Accuracy: 0.796667
+Indices: {324}
+          324: (6, 3)
+Time (s): 4.35695
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 401 (log(k(c)) = 5.9941)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -258.305
+Accuracy: 0.795
+Indices: {324, 178, 225}
+          324: (6, 3)
+          178: (5, 1)
+          225: (1, 4)
+Time (s): 4.58104
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 28.1735 (log(k(g)) = 3.33838)
+Optimal k(c): 474.289 (log(k(c)) = 6.16182)
+Optimal Initial Elo Scores:
+  0: -9.87851
+  1: -5.36771
+  2: -150.796
+  3: 165.394
+  4: -36.0058
+  5: -34.6115
+  6: 3.66183
+  7: 67.6152
+Final Elo Scores:
+  0: 30.7111
+  1: -108.918
+  2: -126.033
+  3: -326.286
+  4: -191.09
+  5: 258.568
+  6: 290.378
+  7: 172.681
+Final Ranking: {6, 5, 7, 0, 1, 2, 4, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -257.486
+Accuracy: 0.813333
+Indices: {324}
+          324: (6, 3)
+Time (s): 0.0675074
+
+
+Total Time (s): 9.02788

@@ -1,0 +1,92 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -255.117
+Accuracy: 0.806667
+Optimal k(g): 63.2702 (log(k(g)) = 4.14741)
+Optimal Initial Elo Scores:
+  0: 16.3692
+  1: 70.8549
+  2: 14.8309
+  3: -32.1975
+  4: -56.553
+  5: -13.3196
+Final Elo Scores:
+  0: 101.393
+  1: 81.8485
+  2: 344.477
+  3: -102.553
+  4: -84.4819
+  5: -340.699
+Final Ranking: {2, 0, 1, 4, 3, 5}
+Time (s): 0.0192084
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 566 (log(k(c)) = 6.338)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -236.402
+Accuracy: 0.833333
+Indices: {190}
+          190: (2, 0)
+Time (s): 4.37448
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 566 (log(k(c)) = 6.338)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -236.402
+Accuracy: 0.833333
+Indices: {190}
+          190: (2, 0)
+Time (s): 4.33797
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 44.9541 (log(k(g)) = 3.80564)
+Optimal k(c): 538.951 (log(k(c)) = 6.28962)
+Optimal Initial Elo Scores:
+  0: -8.66326
+  1: 86.435
+  2: -14.1187
+  3: -14.5446
+  4: -44.4365
+  5: -4.69694
+Final Elo Scores:
+  0: 79.2738
+  1: 77.8063
+  2: 360.8
+  3: -93.2227
+  4: -87.9883
+  5: -336.694
+Final Ranking: {2, 0, 1, 4, 3, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -234.262
+Accuracy: 0.828333
+Indices: {190}
+          190: (2, 0)
+Time (s): 0.0276067
+
+
+Total Time (s): 8.7598

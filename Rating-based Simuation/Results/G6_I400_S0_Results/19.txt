@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -186.573
+Accuracy: 0.78
+Optimal k(g): 83.9891 (log(k(g)) = 4.43069)
+Optimal Initial Elo Scores:
+  0: 145.579
+  1: -119.064
+  2: 114.954
+  3: -38.6095
+  4: -23.5115
+  5: -79.3646
+Final Elo Scores:
+  0: 69.8731
+  1: -353.534
+  2: 347.616
+  3: -117.799
+  4: -123.267
+  5: 177.094
+Final Ranking: {2, 5, 0, 3, 4, 1}
+Time (s): 0.0131457
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 621 (log(k(c)) = 6.43069)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -156.864
+Accuracy: 0.83
+Indices: {137, 257, 70}
+          137: (1, 2)
+          257: (2, 1)
+          70: (2, 1)
+Time (s): 1.89975
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 621 (log(k(c)) = 6.43069)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -156.864
+Accuracy: 0.83
+Indices: {137, 257, 70}
+          137: (1, 2)
+          257: (2, 1)
+          70: (2, 1)
+Time (s): 1.89324
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 17.7869 (log(k(g)) = 2.87846)
+Optimal k(c): 641.593 (log(k(c)) = 6.46395)
+Optimal Initial Elo Scores:
+  0: 113.977
+  1: -104.117
+  2: 88.4998
+  3: -64.9388
+  4: -25.2519
+  5: -8.1871
+Final Elo Scores:
+  0: 88.4133
+  1: -270.385
+  2: 234.634
+  3: -63.0881
+  4: -105.048
+  5: 115.456
+Final Ranking: {2, 5, 0, 3, 4, 1}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -147.252
+Accuracy: 0.835
+Indices: {70, 137, 257}
+          70: (2, 1)
+          137: (1, 2)
+          257: (2, 1)
+Time (s): 0.0547252
+
+
+Total Time (s): 3.8613

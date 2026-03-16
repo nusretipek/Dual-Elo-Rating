@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -264.019
+Accuracy: 0.81
+Optimal k(g): 77.5415 (log(k(g)) = 4.35081)
+Optimal Initial Elo Scores:
+  0: -23.4904
+  1: -156.209
+  2: -65.3273
+  3: -3.4704
+  4: 117.011
+  5: 131.497
+Final Elo Scores:
+  0: -209.699
+  1: 139.328
+  2: 156.994
+  3: 355.236
+  4: -181.462
+  5: -260.385
+Final Ranking: {3, 2, 1, 4, 0, 5}
+Time (s): 0.0280817
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 633 (log(k(c)) = 6.45081)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -225.844
+Accuracy: 0.845
+Indices: {234, 350}
+          234: (2, 3)
+          350: (3, 5)
+Time (s): 4.35589
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 633 (log(k(c)) = 6.45081)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -225.844
+Accuracy: 0.845
+Indices: {234, 350}
+          234: (2, 3)
+          350: (3, 5)
+Time (s): 4.33665
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 43.1123 (log(k(g)) = 3.76381)
+Optimal k(c): 556.366 (log(k(c)) = 6.32143)
+Optimal Initial Elo Scores:
+  0: -21.9075
+  1: -128.879
+  2: -93.927
+  3: 35.6377
+  4: 101.939
+  5: 107.138
+Final Elo Scores:
+  0: -222.431
+  1: 126.215
+  2: 154.419
+  3: 313.998
+  4: -125.239
+  5: -246.961
+Final Ranking: {3, 2, 1, 4, 0, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -220.277
+Accuracy: 0.846667
+Indices: {234, 350}
+          234: (2, 3)
+          350: (3, 5)
+Time (s): 0.0511523
+
+
+Total Time (s): 8.77227

@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -88.0612
+Accuracy: 0.835
+Optimal k(g): 112.761 (log(k(g)) = 4.72527)
+Optimal Initial Elo Scores:
+  0: 2.70464
+  1: 74.8601
+  2: -152.108
+  3: -46.6185
+  4: 95.8295
+  5: 25.3836
+Final Elo Scores:
+  0: 93.7422
+  1: -369.064
+  2: 198.511
+  3: -72.9036
+  4: 314.556
+  5: -164.79
+Final Ranking: {4, 2, 0, 3, 5, 1}
+Time (s): 0.0143338
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 649 (log(k(c)) = 6.47527)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -75.1678
+Accuracy: 0.87
+Indices: {123, 22}
+          123: (0, 1)
+          22: (2, 0)
+Time (s): 0.525552
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 793 (log(k(c)) = 6.67527)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -73.9299
+Accuracy: 0.86
+Indices: {123, 32, 59, 193, 34}
+          123: (0, 1)
+          32: (2, 3)
+          59: (3, 0)
+          193: (2, 3)
+          34: (1, 0)
+Time (s): 0.553274
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 58.6531 (log(k(g)) = 4.07164)
+Optimal k(c): 537.256 (log(k(c)) = 6.28648)
+Optimal Initial Elo Scores:
+  0: -2.91735
+  1: 73.9813
+  2: -147.731
+  3: -46.528
+  4: 98.974
+  5: 24.2723
+Final Elo Scores:
+  0: 114.666
+  1: -381.949
+  2: 176.362
+  3: -10.3266
+  4: 279.603
+  5: -178.305
+Final Ranking: {4, 2, 0, 3, 5, 1}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -72.4819
+Accuracy: 0.865
+Indices: {22, 123}
+          22: (2, 0)
+          123: (0, 1)
+Time (s): 0.729999
+
+
+Total Time (s): 1.82363

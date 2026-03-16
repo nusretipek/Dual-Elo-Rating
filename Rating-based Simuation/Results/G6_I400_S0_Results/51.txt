@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -189.591
+Accuracy: 0.7825
+Optimal k(g): 60.6698 (log(k(g)) = 4.10545)
+Optimal Initial Elo Scores:
+  0: -33.4332
+  1: 38.1264
+  2: 21.4251
+  3: 58.0313
+  4: -22.6302
+  5: -61.5161
+Final Elo Scores:
+  0: -8.72134
+  1: -191.288
+  2: 221.392
+  3: 320.619
+  4: -219.631
+  5: -122.367
+Final Ranking: {3, 2, 0, 5, 1, 4}
+Time (s): 0.0150927
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 597 (log(k(c)) = 6.39148)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -167.311
+Accuracy: 0.81
+Indices: {205, 34}
+          205: (3, 1)
+          34: (1, 4)
+Time (s): 1.91615
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 597 (log(k(c)) = 6.39148)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -167.311
+Accuracy: 0.81
+Indices: {205, 34}
+          205: (3, 1)
+          34: (1, 4)
+Time (s): 1.91993
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 31.1413 (log(k(g)) = 3.43854)
+Optimal k(c): 534.428 (log(k(c)) = 6.2812)
+Optimal Initial Elo Scores:
+  0: -65.9736
+  1: 61.6825
+  2: 11.8535
+  3: 45.919
+  4: 5.41157
+  5: -58.8825
+Final Elo Scores:
+  0: -14.9824
+  1: -190.703
+  2: 182.777
+  3: 378.418
+  4: -239.871
+  5: -115.63
+Final Ranking: {3, 2, 0, 5, 1, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -163.378
+Accuracy: 0.8225
+Indices: {34, 205}
+          34: (1, 4)
+          205: (3, 1)
+Time (s): 0.0200545
+
+
+Total Time (s): 3.87167

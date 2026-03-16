@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -166.191
+Accuracy: 0.8175
+Optimal k(g): 65.036 (log(k(g)) = 4.17494)
+Optimal Initial Elo Scores:
+  0: 75.4909
+  1: -120.09
+  2: 26.2298
+  3: -11.5694
+  4: -12.2592
+  5: 42.1963
+Final Elo Scores:
+  0: -389.284
+  1: -96.4525
+  2: 427.71
+  3: 70.297
+  4: 83.6579
+  5: -95.9297
+Final Ranking: {2, 4, 3, 5, 1, 0}
+Time (s): 0.01143
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 670 (log(k(c)) = 6.50714)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -149.728
+Accuracy: 0.85
+Indices: {396, 79, 46}
+          396: (3, 1)
+          79: (2, 0)
+          46: (0, 2)
+Time (s): 2.39893
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 485 (log(k(c)) = 6.18494)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -150.047
+Accuracy: 0.8475
+Indices: {79, 46, 140}
+          79: (2, 0)
+          46: (0, 2)
+          140: (3, 0)
+Time (s): 1.98985
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 22.36 (log(k(g)) = 3.10727)
+Optimal k(c): 594.576 (log(k(c)) = 6.38785)
+Optimal Initial Elo Scores:
+  0: 91.6878
+  1: -116.325
+  2: 4.40247
+  3: 1.28274
+  4: 9.67499
+  5: 9.27233
+Final Elo Scores:
+  0: -323.36
+  1: -57.346
+  2: 408.545
+  3: 42.4794
+  4: 74.5701
+  5: -144.894
+Final Ranking: {2, 4, 3, 1, 5, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -145.055
+Accuracy: 0.8525
+Indices: {46, 79}
+          46: (0, 2)
+          79: (2, 0)
+Time (s): 0.110755
+
+
+Total Time (s): 4.51148

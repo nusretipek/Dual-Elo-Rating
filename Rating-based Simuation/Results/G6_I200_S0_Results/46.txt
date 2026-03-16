@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -101.488
+Accuracy: 0.79
+Optimal k(g): 77.8547 (log(k(g)) = 4.35484)
+Optimal Initial Elo Scores:
+  0: 33.2764
+  1: 67.1028
+  2: 136.665
+  3: -161.967
+  4: -54.0904
+  5: -20.9877
+Final Elo Scores:
+  0: 124.213
+  1: -273.636
+  2: -45.027
+  3: 42.5285
+  4: -93.7065
+  5: 245.627
+Final Ranking: {5, 0, 3, 2, 4, 1}
+Time (s): 0.00571821
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 448 (log(k(c)) = 6.10484)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -85.0302
+Accuracy: 0.825
+Indices: {77, 123}
+          77: (5, 2)
+          123: (2, 1)
+Time (s): 0.521334
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 422 (log(k(c)) = 6.04484)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -84.4452
+Accuracy: 0.825
+Indices: {123, 77, 87}
+          123: (2, 1)
+          77: (5, 2)
+          87: (5, 1)
+Time (s): 0.549076
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 2.06214e-97 (log(k(g)) = -222.627)
+Optimal k(c): 353.877 (log(k(c)) = 5.86895)
+Optimal Initial Elo Scores:
+  0: 36.0729
+  1: 140.037
+  2: 120.388
+  3: -64.0451
+  4: -119.367
+  5: -113.084
+Final Elo Scores:
+  0: 36.0729
+  1: -297.742
+  2: 117.73
+  3: -64.0451
+  4: -119.367
+  5: 327.352
+Final Ranking: {5, 2, 0, 3, 4, 1}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -76.9878
+Accuracy: 0.83
+Indices: {77, 87, 123}
+          77: (5, 2)
+          87: (5, 1)
+          123: (2, 1)
+Time (s): 0.0562632
+
+
+Total Time (s): 1.13272

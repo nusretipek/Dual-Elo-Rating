@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -92.4796
+Accuracy: 0.775
+Optimal k(g): 79.0535 (log(k(g)) = 4.37012)
+Optimal Initial Elo Scores:
+  0: -100.049
+  1: -35.6883
+  2: 71.5016
+  3: -28.6039
+  4: 231.459
+  5: -138.611
+Final Elo Scores:
+  0: -126.943
+  1: -48.0637
+  2: -376.477
+  3: 28.0281
+  4: 249.203
+  5: 274.261
+Final Ranking: {5, 4, 3, 1, 0, 2}
+Time (s): 0.00764463
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 614 (log(k(c)) = 6.41944)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -79.0722
+Accuracy: 0.8
+Indices: {87, 179}
+          87: (5, 2)
+          179: (4, 1)
+Time (s): 0.500558
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 590 (log(k(c)) = 6.38012)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -78.2142
+Accuracy: 0.8
+Indices: {87, 179, 152}
+          87: (5, 2)
+          179: (4, 1)
+          152: (3, 2)
+Time (s): 0.498778
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 4.75198e-137 (log(k(g)) = -313.896)
+Optimal k(c): 528.052 (log(k(c)) = 6.26919)
+Optimal Initial Elo Scores:
+  0: -79.5328
+  1: 2.40378
+  2: 68.7009
+  3: -95.9057
+  4: 207.217
+  5: -102.887
+Final Elo Scores:
+  0: -79.5328
+  1: 2.40378
+  2: -378.875
+  3: -95.9057
+  4: 207.217
+  5: 344.688
+Final Ranking: {5, 4, 1, 0, 3, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -74.1078
+Accuracy: 0.84
+Indices: {87}
+          87: (5, 2)
+Time (s): 0.0505956
+
+
+Total Time (s): 1.05792

@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -278.154
+Accuracy: 0.791667
+Optimal k(g): 65.2642 (log(k(g)) = 4.17844)
+Optimal Initial Elo Scores:
+  0: -8.04134
+  1: 29.1979
+  2: 141.031
+  3: -228.806
+  4: 61.7109
+  5: 4.94766
+Final Elo Scores:
+  0: -380.06
+  1: 154.413
+  2: 39.1117
+  3: 244.155
+  4: -176.337
+  5: 118.757
+Final Ranking: {3, 1, 5, 2, 4, 0}
+Time (s): 0.0173303
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 482 (log(k(c)) = 6.17844)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -263.249
+Accuracy: 0.803333
+Indices: {397, 396}
+          397: (3, 0)
+          396: (2, 0)
+Time (s): 5.93837
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 459 (log(k(c)) = 6.12844)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -260.332
+Accuracy: 0.803333
+Indices: {396, 397, 584}
+          396: (2, 0)
+          397: (3, 0)
+          584: (5, 2)
+Time (s): 5.5065
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 43.9151 (log(k(g)) = 3.78226)
+Optimal k(c): 412.962 (log(k(c)) = 6.02336)
+Optimal Initial Elo Scores:
+  0: -3.89324
+  1: 28.5481
+  2: 141.523
+  3: -216.874
+  4: 60.4436
+  5: -9.71439
+Final Elo Scores:
+  0: -379.062
+  1: 140.674
+  2: 54.333
+  3: 252.45
+  4: -151.61
+  5: 83.2481
+Final Ranking: {3, 1, 5, 2, 4, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -264.279
+Accuracy: 0.793333
+Indices: {397}
+          397: (3, 0)
+Time (s): 0.0683061
+
+
+Total Time (s): 11.5313

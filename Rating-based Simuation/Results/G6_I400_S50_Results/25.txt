@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -139.179
+Accuracy: 0.85
+Optimal k(g): 74.6572 (log(k(g)) = 4.31291)
+Optimal Initial Elo Scores:
+  0: -211.62
+  1: 69.2161
+  2: 27.8081
+  3: 120.1
+  4: -61.9062
+  5: 56.4276
+Final Elo Scores:
+  0: -193.403
+  1: -48.7757
+  2: 414.371
+  3: -439.61
+  4: 30.1271
+  5: 237.317
+Final Ranking: {2, 5, 4, 1, 0, 3}
+Time (s): 0.0100163
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 610 (log(k(c)) = 6.41291)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -128.913
+Accuracy: 0.8675
+Indices: {150, 157, 155}
+          150: (2, 3)
+          157: (5, 1)
+          155: (5, 3)
+Time (s): 2.10979
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 557 (log(k(c)) = 6.32291)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -128.027
+Accuracy: 0.8625
+Indices: {154, 153}
+          154: (5, 3)
+          153: (2, 4)
+Time (s): 2.32226
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 30.4982 (log(k(g)) = 3.41767)
+Optimal k(c): 512.78 (log(k(c)) = 6.23985)
+Optimal Initial Elo Scores:
+  0: -205.73
+  1: 61.1674
+  2: 37.9325
+  3: 128.695
+  4: -56.7586
+  5: 34.7188
+Final Elo Scores:
+  0: -180.018
+  1: -35.2222
+  2: 394.013
+  3: -408.315
+  4: 21.0732
+  5: 208.494
+Final Ranking: {2, 5, 4, 1, 0, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -125.736
+Accuracy: 0.865
+Indices: {150, 154}
+          150: (2, 3)
+          154: (5, 3)
+Time (s): 0.681032
+
+
+Total Time (s): 5.12352

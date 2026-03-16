@@ -1,0 +1,17 @@
+===== Matching Statistics =====
+Total True Events: 157
+Total True Positives: 152
+Recall: 0.9682
+
+===== Average Loss / Accuracy =====
+Optimized Elo   - Avg Loss: -187.9229, Avg Acc: 0.7815
+Full Model Best - Avg Loss: -160.5101, Avg Acc: 0.8192
+
+===== Average Parameters =====
+Average Optimized k(g): 63.2375
+Average Full Model k(g): 18.3500
+Average Full Model k(c): 498.7004
+
+===== Score Difference vs Meta (mean(|pred-meta|/meta), decimal) =====
+Meta vs Optimized: 0.405522
+Meta vs Full:      0.621625

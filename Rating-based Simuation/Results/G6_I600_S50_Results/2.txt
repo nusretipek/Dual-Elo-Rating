@@ -1,0 +1,92 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -200.935
+Accuracy: 0.861667
+Optimal k(g): 68.1443 (log(k(g)) = 4.22163)
+Optimal Initial Elo Scores:
+  0: 58.209
+  1: 23.9434
+  2: -91.9768
+  3: -144.931
+  4: 153.458
+  5: 1.28854
+Final Elo Scores:
+  0: 110.968
+  1: -77.8185
+  2: -4.71252
+  3: 345.371
+  4: -465.538
+  5: 91.7222
+Final Ranking: {3, 0, 5, 2, 1, 4}
+Time (s): 0.034575
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 663 (log(k(c)) = 6.4971)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -181.005
+Accuracy: 0.871667
+Indices: {211}
+          211: (3, 4)
+Time (s): 4.37919
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 663 (log(k(c)) = 6.4971)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -181.005
+Accuracy: 0.871667
+Indices: {211}
+          211: (3, 4)
+Time (s): 4.6909
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 1.00484e-15 (log(k(g)) = -34.5339)
+Optimal k(c): 630.213 (log(k(c)) = 6.44606)
+Optimal Initial Elo Scores:
+  0: 185.528
+  1: -78.6603
+  2: -46.7326
+  3: -265.623
+  4: 138.621
+  5: 66.864
+Final Elo Scores:
+  0: 185.528
+  1: -78.6603
+  2: -46.7326
+  3: 353.718
+  4: -480.72
+  5: 66.864
+Final Ranking: {3, 0, 5, 2, 1, 4}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -169.624
+Accuracy: 0.893333
+Indices: {211}
+          211: (3, 4)
+Time (s): 0.0753084
+
+
+Total Time (s): 9.18088

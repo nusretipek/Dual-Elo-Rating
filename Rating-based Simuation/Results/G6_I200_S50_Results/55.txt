@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -100.917
+Accuracy: 0.805
+Optimal k(g): 61.9599 (log(k(g)) = 4.12649)
+Optimal Initial Elo Scores:
+  0: -31.7457
+  1: -34.7031
+  2: 47.6172
+  3: -29.2803
+  4: 162.523
+  5: -114.407
+Final Elo Scores:
+  0: -132.993
+  1: 29.2493
+  2: 190.88
+  3: -31.9648
+  4: 114.652
+  5: -169.82
+Final Ranking: {2, 4, 1, 3, 0, 5}
+Time (s): 0.0104273
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 477 (log(k(c)) = 6.16853)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -83.4619
+Accuracy: 0.86
+Indices: {129, 45, 93}
+          129: (1, 0)
+          45: (0, 1)
+          93: (2, 5)
+Time (s): 0.533121
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 474 (log(k(c)) = 6.16144)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -83.463
+Accuracy: 0.86
+Indices: {129, 45, 93}
+          129: (1, 0)
+          45: (0, 1)
+          93: (2, 5)
+Time (s): 0.532914
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 8.57192e-259 (log(k(g)) = -594.221)
+Optimal k(c): 507.08 (log(k(c)) = 6.22867)
+Optimal Initial Elo Scores:
+  0: -126.07
+  1: 28.0348
+  2: 35.2691
+  3: -5.68022
+  4: 143.188
+  5: -74.7421
+Final Elo Scores:
+  0: -214.953
+  1: 116.917
+  2: 161.897
+  3: -5.68022
+  4: 143.188
+  5: -201.37
+Final Ranking: {2, 4, 1, 3, 5, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -74.1599
+Accuracy: 0.85
+Indices: {45, 93, 129}
+          45: (0, 1)
+          93: (2, 5)
+          129: (1, 0)
+Time (s): 0.0585236
+
+
+Total Time (s): 1.13529

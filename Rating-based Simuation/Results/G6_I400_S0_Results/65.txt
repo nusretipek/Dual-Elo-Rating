@@ -1,0 +1,98 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -158.31
+Accuracy: 0.81
+Optimal k(g): 74.5633 (log(k(g)) = 4.31165)
+Optimal Initial Elo Scores:
+  0: 25.0825
+  1: -60.7959
+  2: -48.0607
+  3: 16.9124
+  4: 30.3008
+  5: 36.5518
+Final Elo Scores:
+  0: 25.1585
+  1: 302.165
+  2: 268.967
+  3: 17.8345
+  4: -311.973
+  5: -302.161
+Final Ranking: {1, 2, 0, 3, 5, 4}
+Time (s): 0.00609111
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 707 (log(k(c)) = 6.56165)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -140.995
+Accuracy: 0.8475
+Indices: {172, 49, 373}
+          172: (1, 5)
+          49: (5, 4)
+          373: (2, 0)
+Time (s): 1.90443
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 551 (log(k(c)) = 6.31165)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -140.034
+Accuracy: 0.84
+Indices: {172, 12, 69}
+          172: (1, 5)
+          12: (5, 0)
+          69: (2, 1)
+Time (s): 1.89805
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 8.1098 (log(k(g)) = 2.09307)
+Optimal k(c): 632.481 (log(k(c)) = 6.44965)
+Optimal Initial Elo Scores:
+  0: 25.0808
+  1: -60.8011
+  2: -48.0582
+  3: 16.9159
+  4: 30.2991
+  5: 36.5545
+Final Elo Scores:
+  0: 14.4706
+  1: 278.438
+  2: 197.141
+  3: 67.4348
+  4: -231.922
+  5: -325.572
+Final Ranking: {1, 2, 3, 0, 4, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -133.689
+Accuracy: 0.8575
+Indices: {49, 69, 172}
+          49: (5, 4)
+          69: (2, 1)
+          172: (1, 5)
+Time (s): 0.629137
+
+
+Total Time (s): 4.43815

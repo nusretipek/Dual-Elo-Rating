@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -95.4909
+Accuracy: 0.805
+Optimal k(g): 99.9474 (log(k(g)) = 4.60464)
+Optimal Initial Elo Scores:
+  0: 108.426
+  1: -48.4299
+  2: -116.715
+  3: -9.94056
+  4: 28.2257
+  5: 38.4361
+Final Elo Scores:
+  0: 208.678
+  1: -221.579
+  2: -88.978
+  3: -176.495
+  4: 229.634
+  5: 48.7436
+Final Ranking: {4, 0, 5, 2, 3, 1}
+Time (s): 0.00720311
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 595 (log(k(c)) = 6.38822)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -81.6295
+Accuracy: 0.845
+Indices: {120, 13}
+          120: (4, 1)
+          13: (1, 5)
+Time (s): 0.470944
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 636 (log(k(c)) = 6.45464)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -81.5264
+Accuracy: 0.835
+Indices: {120, 28}
+          120: (4, 1)
+          28: (1, 3)
+Time (s): 0.533408
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 4.93601e-202 (log(k(g)) = -463.526)
+Optimal k(c): 519.445 (log(k(c)) = 6.25276)
+Optimal Initial Elo Scores:
+  0: 148.504
+  1: 117.44
+  2: -21.9453
+  3: -151.722
+  4: -122.023
+  5: 29.755
+Final Elo Scores:
+  0: 148.504
+  1: -239.279
+  2: -21.9453
+  3: -151.722
+  4: 387.325
+  5: -122.874
+Final Ranking: {4, 0, 2, 5, 3, 1}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -75.8489
+Accuracy: 0.845
+Indices: {13, 120}
+          13: (1, 5)
+          120: (4, 1)
+Time (s): 0.0767001
+
+
+Total Time (s): 1.08856

@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -161.469
+Accuracy: 0.82
+Optimal k(g): 73.0128 (log(k(g)) = 4.29063)
+Optimal Initial Elo Scores:
+  0: 25.9881
+  1: -206.255
+  2: -24.1612
+  3: 182.96
+  4: 9.65198
+  5: 11.8403
+Final Elo Scores:
+  0: -225.494
+  1: 84.3447
+  2: 189.661
+  3: 331.762
+  4: -213.33
+  5: -166.921
+Final Ranking: {3, 2, 1, 5, 4, 0}
+Time (s): 0.0230647
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 521 (log(k(c)) = 6.25485)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -146.086
+Accuracy: 0.8575
+Indices: {98, 235}
+          98: (3, 4)
+          235: (1, 0)
+Time (s): 2.21681
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 529 (log(k(c)) = 6.27062)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -142.83
+Accuracy: 0.86
+Indices: {98, 235, 341, 342}
+          98: (3, 4)
+          235: (1, 0)
+          341: (3, 1)
+          342: (1, 4)
+Time (s): 1.96868
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 46.1952 (log(k(g)) = 3.83288)
+Optimal k(c): 468.745 (log(k(c)) = 6.15006)
+Optimal Initial Elo Scores:
+  0: 20.8413
+  1: -252.419
+  2: 18.3896
+  3: 169.907
+  4: 7.84291
+  5: 35.4534
+Final Elo Scores:
+  0: -269.353
+  1: 103.498
+  2: 205.324
+  3: 303.392
+  4: -177.728
+  5: -165.118
+Final Ranking: {3, 2, 1, 5, 4, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -144.405
+Accuracy: 0.8575
+Indices: {98, 235}
+          98: (3, 4)
+          235: (1, 0)
+Time (s): 0.248831
+
+
+Total Time (s): 4.458

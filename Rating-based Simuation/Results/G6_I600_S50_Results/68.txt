@@ -1,0 +1,94 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -285.768
+Accuracy: 0.788333
+Optimal k(g): 60.1803 (log(k(g)) = 4.09734)
+Optimal Initial Elo Scores:
+  0: -123.864
+  1: 152.165
+  2: -36.6602
+  3: -29.4642
+  4: -120.393
+  5: 158.23
+Final Elo Scores:
+  0: -282.288
+  1: -88.6126
+  2: 286.592
+  3: 70.1135
+  4: 116.46
+  5: -102.251
+Final Ranking: {2, 4, 3, 1, 5, 0}
+Time (s): 0.0247272
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 506 (log(k(c)) = 6.22609)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -269.523
+Accuracy: 0.815
+Indices: {192, 474}
+          192: (4, 5)
+          474: (2, 3)
+Time (s): 5.38772
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 412 (log(k(c)) = 6.02184)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -268.267
+Accuracy: 0.811667
+Indices: {192, 474}
+          192: (4, 5)
+          474: (2, 3)
+Time (s): 4.92253
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 37.0774 (log(k(g)) = 3.61301)
+Optimal k(c): 382.46 (log(k(c)) = 5.94662)
+Optimal Initial Elo Scores:
+  0: -142.327
+  1: 146.25
+  2: -40.3946
+  3: -53.2002
+  4: -107.459
+  5: 197.149
+Final Elo Scores:
+  0: -248.33
+  1: -53.0479
+  2: 233.644
+  3: 54.3509
+  4: 106.902
+  5: -93.5002
+Final Ranking: {2, 4, 3, 1, 5, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -270.407
+Accuracy: 0.808333
+Indices: {192}
+          192: (4, 5)
+Time (s): 0.0328993
+
+
+Total Time (s): 10.3686

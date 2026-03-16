@@ -1,0 +1,95 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -250.993
+Accuracy: 0.826667
+Optimal k(g): 71.1301 (log(k(g)) = 4.26451)
+Optimal Initial Elo Scores:
+  0: -178.44
+  1: 17.4656
+  2: 48.9144
+  3: 66.863
+  4: 118.159
+  5: -72.956
+Final Elo Scores:
+  0: -108.63
+  1: -0.597336
+  2: -298.612
+  3: 318.991
+  4: 215.013
+  5: -126.158
+Final Ranking: {3, 4, 1, 0, 5, 2}
+Time (s): 0.0324451
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 582 (log(k(c)) = 6.36581)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -220.132
+Accuracy: 0.845
+Indices: {287, 135}
+          287: (3, 2)
+          135: (5, 3)
+Time (s): 4.16918
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 581 (log(k(c)) = 6.36451)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -220.133
+Accuracy: 0.845
+Indices: {287, 135}
+          287: (3, 2)
+          135: (5, 3)
+Time (s): 4.40977
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 32.2391 (log(k(g)) = 3.47318)
+Optimal k(c): 511.671 (log(k(c)) = 6.23768)
+Optimal Initial Elo Scores:
+  0: -178.063
+  1: 44.7634
+  2: 84.1101
+  3: 117.898
+  4: 103.826
+  5: -172.53
+Final Elo Scores:
+  0: -139.473
+  1: 3.16047
+  2: -270.785
+  3: 306.066
+  4: 199.325
+  5: -98.2876
+Final Ranking: {3, 4, 1, 5, 0, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -212.483
+Accuracy: 0.853333
+Indices: {135, 287}
+          135: (5, 3)
+          287: (3, 2)
+Time (s): 0.0501057
+
+
+Total Time (s): 8.66225

@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -94.7596
+Accuracy: 0.82
+Optimal k(g): 84.5498 (log(k(g)) = 4.43734)
+Optimal Initial Elo Scores:
+  0: -78.5149
+  1: 75.9615
+  2: 176.179
+  3: -107.519
+  4: 12.0058
+  5: -78.109
+Final Elo Scores:
+  0: 266.562
+  1: 134.568
+  2: 5.98136
+  3: 119.445
+  4: -223.149
+  5: -303.403
+Final Ranking: {0, 1, 3, 2, 4, 5}
+Time (s): 0.00610903
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 781 (log(k(c)) = 6.66121)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -78.3178
+Accuracy: 0.865
+Indices: {93, 24, 170}
+          93: (0, 5)
+          24: (1, 0)
+          170: (1, 4)
+Time (s): 0.488054
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 631 (log(k(c)) = 6.44734)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -77.6922
+Accuracy: 0.86
+Indices: {93, 106, 166}
+          93: (0, 5)
+          106: (0, 1)
+          166: (1, 4)
+Time (s): 0.484607
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 41.6499 (log(k(g)) = 3.7293)
+Optimal k(c): 573.201 (log(k(c)) = 6.35124)
+Optimal Initial Elo Scores:
+  0: -170.541
+  1: 87.9522
+  2: 164.797
+  3: -63.582
+  4: 0.78017
+  5: -19.4042
+Final Elo Scores:
+  0: 327.434
+  1: 199.722
+  2: 79.5596
+  3: 150.167
+  4: -301.061
+  5: -455.818
+Final Ranking: {0, 1, 3, 2, 4, 5}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -75.8089
+Accuracy: 0.845
+Indices: {93, 166}
+          93: (0, 5)
+          166: (1, 4)
+Time (s): 0.112167
+
+
+Total Time (s): 1.09133

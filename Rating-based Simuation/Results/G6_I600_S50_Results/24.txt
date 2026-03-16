@@ -1,0 +1,96 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -231.226
+Accuracy: 0.835
+Optimal k(g): 77.292 (log(k(g)) = 4.34759)
+Optimal Initial Elo Scores:
+  0: 86.3363
+  1: -71.3365
+  2: -102.988
+  3: 10.9432
+  4: 129.013
+  5: -51.9768
+Final Elo Scores:
+  0: -138.743
+  1: 49.3909
+  2: 324.18
+  3: -431.545
+  4: 67.8613
+  5: 128.847
+Final Ranking: {2, 5, 4, 1, 0, 3}
+Time (s): 0.0262374
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 530 (log(k(c)) = 6.27281)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -200.337
+Accuracy: 0.866667
+Indices: {359, 94, 130}
+          359: (4, 3)
+          94: (1, 4)
+          130: (3, 4)
+Time (s): 4.56747
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 571 (log(k(c)) = 6.34759)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -200.942
+Accuracy: 0.865
+Indices: {359, 94}
+          359: (4, 3)
+          94: (1, 4)
+Time (s): 4.61401
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 46.5767 (log(k(g)) = 3.8411)
+Optimal k(c): 506.035 (log(k(c)) = 6.22661)
+Optimal Initial Elo Scores:
+  0: 99.2053
+  1: -138.56
+  2: -97.6758
+  3: 16.1668
+  4: 191.783
+  5: -70.9458
+Final Elo Scores:
+  0: -141.193
+  1: 39.1535
+  2: 351.208
+  3: -420.472
+  4: 80.3612
+  5: 90.9158
+Final Ranking: {2, 5, 4, 1, 0, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -196.534
+Accuracy: 0.863333
+Indices: {94, 359}
+          94: (1, 4)
+          359: (4, 3)
+Time (s): 0.102694
+
+
+Total Time (s): 9.31118

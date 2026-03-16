@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -169.701
+Accuracy: 0.8075
+Optimal k(g): 76.3866 (log(k(g)) = 4.33581)
+Optimal Initial Elo Scores:
+  0: 13.8326
+  1: -68.501
+  2: -63.6176
+  3: 108.832
+  4: -93.6526
+  5: 103.099
+Final Elo Scores:
+  0: 337.887
+  1: -174.738
+  2: -416.044
+  3: 2.9236
+  4: 191.816
+  5: 58.1484
+Final Ranking: {0, 4, 5, 3, 1, 2}
+Time (s): 0.0122296
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 577 (log(k(c)) = 6.35736)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -151.185
+Accuracy: 0.825
+Indices: {64, 208, 237}
+          64: (0, 3)
+          208: (3, 2)
+          237: (3, 1)
+Time (s): 1.96541
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 576 (log(k(c)) = 6.35644)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -150.625
+Accuracy: 0.82
+Indices: {64, 208, 23}
+          64: (0, 3)
+          208: (3, 2)
+          23: (5, 1)
+Time (s): 1.94765
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 30.6638 (log(k(g)) = 3.42308)
+Optimal k(c): 492.994 (log(k(c)) = 6.2005)
+Optimal Initial Elo Scores:
+  0: 13.8304
+  1: -68.502
+  2: -63.6167
+  3: 108.832
+  4: -93.6508
+  5: 103.1
+Final Elo Scores:
+  0: 368.778
+  1: -132.782
+  2: -488.02
+  3: 60.8731
+  4: 147.299
+  5: 43.8444
+Final Ranking: {0, 4, 3, 5, 1, 2}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -143.294
+Accuracy: 0.83
+Indices: {64, 208}
+          64: (0, 3)
+          208: (3, 2)
+Time (s): 0.299828
+
+
+Total Time (s): 4.22565

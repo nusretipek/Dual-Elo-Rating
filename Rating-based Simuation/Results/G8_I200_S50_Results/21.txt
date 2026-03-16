@@ -1,0 +1,108 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+Optimized Elo unbounded optimization failed: The objective function generated non-finite outputs.
+Using find min box constrained method...
+
+Optimized Elo: Results 
+ ---------------
+Loss: -121.904
+Accuracy: 0.695
+Optimal k(g): 49.284 (log(k(g)) = 3.8976)
+Optimal Initial Elo Scores:
+  0: 20.2542
+  1: -70.0762
+  2: -20.2745
+  3: 24.1031
+  4: 101.19
+  5: 27.8201
+  6: -74.8245
+  7: -8.1851
+Final Elo Scores:
+  0: -79.6531
+  1: 55.6265
+  2: -10.9236
+  3: -236.017
+  4: 32.9326
+  5: 10.2457
+  6: 103.439
+  7: 124.357
+Final Ranking: {7, 6, 1, 4, 5, 2, 0, 3}
+Time (s): 0.016126
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 468 (log(k(c)) = 6.1476)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -102.875
+Accuracy: 0.765
+Indices: {54, 109, 98}
+          54: (0, 3)
+          109: (6, 0)
+          98: (7, 6)
+Time (s): 0.604482
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 468 (log(k(c)) = 6.1476)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -102.875
+Accuracy: 0.765
+Indices: {54, 109, 98}
+          54: (0, 3)
+          109: (6, 0)
+          98: (7, 6)
+Time (s): 0.602214
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 4.788e-152 (log(k(g)) = -348.427)
+Optimal k(c): 466.382 (log(k(c)) = 6.145)
+Optimal Initial Elo Scores:
+  0: -62.8064
+  1: 23.843
+  2: -41.1378
+  3: 77.5295
+  4: 73.9165
+  5: 1.52761
+  6: -84.2886
+  7: 11.427
+Final Elo Scores:
+  0: -152.387
+  1: 23.843
+  2: -41.1378
+  3: -296.843
+  4: 73.9165
+  5: 1.52761
+  6: 250.268
+  7: 140.824
+Final Ranking: {6, 7, 4, 1, 5, 2, 0, 3}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -92.4872
+Accuracy: 0.785
+Indices: {54, 98, 109}
+          54: (0, 3)
+          98: (7, 6)
+          109: (6, 0)
+Time (s): 0.0608118
+
+
+Total Time (s): 1.28395

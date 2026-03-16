@@ -1,0 +1,97 @@
+*******************************
+*** Optimized Elo (Default) ***
+*******************************
+
+Optimized Elo: Results 
+ ---------------
+Loss: -106.576
+Accuracy: 0.795
+Optimal k(g): 74.6606 (log(k(g)) = 4.31295)
+Optimal Initial Elo Scores:
+  0: -11.8642
+  1: -35.8729
+  2: 136.131
+  3: -26.8102
+  4: 76.3077
+  5: -137.89
+Final Elo Scores:
+  0: -196.307
+  1: -115.506
+  2: 244.589
+  3: 42.0132
+  4: 127.317
+  5: -102.105
+Final Ranking: {2, 4, 3, 5, 1, 0}
+Time (s): 0.00660663
+
+********************************************************
+*** Optimized Elo (k(c) Parameter - Accuracy-oriented) ***
+********************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 546 (log(k(c)) = 6.30295)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -86.6495
+Accuracy: 0.835
+Indices: {129, 45}
+          129: (4, 0)
+          45: (0, 4)
+Time (s): 0.595981
+
+****************************************************
+*** Optimized Elo (k(c) Parameter - Loss-oriented) ***
+****************************************************
+
+k(c) Parameter: Results
+ ---------------
+Optimized k(c): 499 (log(k(c)) = 6.21295)
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -85.6759
+Accuracy: 0.84
+Indices: {129, 75, 45}
+          129: (4, 0)
+          75: (2, 1)
+          45: (0, 4)
+Time (s): 0.561163
+
+**********************************
+*** Optimized Elo (Full Model) ***
+**********************************
+
+Optimized Full Model Elo: Results
+ ---------------
+Optimal k(g): 1.0864e-120 (log(k(g)) = -276.227)
+Optimal k(c): 551.253 (log(k(c)) = 6.31219)
+Optimal Initial Elo Scores:
+  0: -54.2503
+  1: 0.0354434
+  2: 103.511
+  3: 35.9922
+  4: 14.461
+  5: -99.7481
+Final Elo Scores:
+  0: -238.027
+  1: -144.483
+  2: 248.029
+  3: 35.9922
+  4: 198.238
+  5: -99.7481
+Final Ranking: {2, 4, 3, 5, 1, 0}
+
+Best Combinational k(g) and k(c) Elo Model
+ --------------- 
+Loss: -71.9315
+Accuracy: 0.86
+Indices: {45, 75, 129}
+          45: (0, 4)
+          75: (2, 1)
+          129: (4, 0)
+Time (s): 0.0395836
+
+
+Total Time (s): 1.20364
