@@ -1,0 +1,57 @@
+{
+  "title": "Dual Elo Rating",
+  "version": "1.0.1",
+  "publication_date": "2026-03-16",
+  "upload_type": "software",
+  "description": "Elo rating and its variants are widely employed to characterize the social (dominance) hierarchies within animal groups. These ranking methods are considered the state-of-the-art for analyzing sequential dyadic agonistic interaction data. However, they have been criticized for adapting slowly to rare but abrupt and important changes in the dominance hierarchy. In this paper, we show that this delayed response can be overcome by making the update parameter of the Elo rating time-dependent. By distinguishing between two types of interactions, i.e. low-impact and high-impact interactions each with an associated update parameter, a simple parametrization of a time-dependent update parameter can be obtained. We refer to this innovation as Dual Elo. Building on Optimized Elo, we propose a computationally efficient maximum-likelihood-based algorithm to fit Dual Elo to an observed sequence of interactions. The result is an extension of Elo rating that can handle a mix of gradual and sudden changes in the hierarchy, leading to a model that is more responsive with more robust estimates of the temporal evolution of the Elo scores. A systematic evaluation of the Dual Elo rating on both simulated and publicly available datasets demonstrates its robustness, even when the observations of the outcomes of interactions are noisy.",
+  "creators": [
+    {
+      "name": "Ipek, Nusret",
+      "orcid": "0000-0002-4507-0200",
+      "affiliation": "Department of Data Analysis and Mathematical Modelling, Ghent University, Coupure links 653, B-9000 Gent, Belgium"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "De Baets, Bernard",
+      "orcid": "0000-0002-3876-620X",
+      "affiliation": "Department of Data Analysis and Mathematical Modelling, Ghent University, Coupure links 653, B-9000 Gent, Belgium",
+      "type": "Supervisor"
+    },
+    {
+      "name": "Tuyttens, Frank",
+      "orcid": "0000-0002-1348-218X",
+      "affiliation": "Animal Sciences Unit, ILVO, Burgemeester Van Gansberghelaan 119, 9090 Merelbeke-Melle, Belgium; Department of Veterinary and Biosciences, Faculty of Veterinary Medicine, Ghent University, Salisburylaan 133, 9820 Merelbeke-Melle, Belgium",
+      "type": "Supervisor"
+    },
+    {
+      "name": "Verwaeren, Jan",
+      "orcid": "0000-0001-9978-501X",
+      "affiliation": "Department of Data Analysis and Mathematical Modelling, Ghent University, Coupure links 653, B-9000 Gent, Belgium",
+      "type": "Supervisor"
+    }
+  ],
+  "access_right": "open",
+  "license": "GPL-3.0-only",
+  "language": "eng",
+  "keywords": [
+    "Elo rating",
+    "animal behaviour",
+    "dominance hierarchy",
+    "agonistic interaction",
+    "maximum likelihood estimation",
+    "hierarchy changes"
+  ],
+  "communities": [
+    {
+      "identifier": "ugent"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nusretipek/Dual-Elo-Rating",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ]
+}
